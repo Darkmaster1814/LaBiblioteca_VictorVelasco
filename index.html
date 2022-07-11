@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Library type of fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!-- Icon of webpage -->
+    <link rel="shortcut icon" href="./Imagenes/logo.ico">
+    <!-- Library of the page awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Reference of CSS file -->
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <!-- Library of animation and transitions -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>La Biblioteca</title>
+</head>
+<!-- ONE PAGE WEB  -->
+<body>
+    <div id="ONEPAGE">    
+    <!-- Header -->
+    <header>
+        <div class="logo">La<span>Biblioteca</span></div>
+        <nav class="barra">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <ul type="circle">
+                <li><a href id="#">Inicio</a></li>
+                <li><a href="#PROMOS">Promociones</a></li>
+                <li><a href="#MENU">Menú</a></li>
+                <li><a href="#UBICACION">Ubicación</a></li>
+                <li><a href="#NOSOTROS">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HOME # AREA -->
+    <main>
+        <div data-aos="fade-up" class="call"> <strong>Café y libros</strong></div>
+        <div data-aos="fade-down" class="call2">La mejor compañía Internet que si funciona</div>
+    </main>
+    <!-- PROMO AREA -->
+    <h2 id="PROMOS">Promociones</h2>
+    <section id="PROMOS_SECTION">
+        <div data-aos="fade-right" id="VideoPromo"><video src="./Video/Promociones.mp4" autoplay muted>Tu
+                navegador no soporta HTML5 video</video></div>
+        <div data-aos="fade-left" id="TextoPromo"><a href="./HTML/Promociones.html" target="_blank"><h3>Ver Nuestras Promociones</h3></a></div>
+    </section>
+
+    <!-- MENU AREA -->
+    <h2 id="MENU">Menú</h2>
+    <section id="MENU_SECTION">
+        <div data-aos="fade-up-left" id="TextoMenu"><a href="./HTML/Menu.html" target="_blank"><h3>Visita Muestro Menú Aquí</h3></a></div>
+    </section>
+    <!-- LOCATION AREA -->
+    <h2 id="UBICACION">Ubicación</h2>
+    <section id="UBICACION_SECTION">
+        <div data-aos="fade-down" id="TextoUbicacion"><a href="./HTML/Conocenos.html" target="_blank"><h3>Ubica<br> Nuestras Sucursales Aquí</h3></a></div>
+    </section>
+    <!-- ABOUT US AREA -->
+    <h2 id="NOSOTROS">Nosotros</h2>
+    <section id="NOSOTROS_UBICACION">
+        <div data-aos="fade-right" id="VideoNosotros"><video src="./Video/Conversation - 180.mp4" autoplay muted>Tu
+            navegador no soporta HTML5 video</video></div>
+        <div data-aos="fade-left" id="TextoNosotros"><a href="./HTML/Nosotros.html" target="_blank"><p>"La biblioteca nace en 2021, de la
+                mano de una joven emprendedora que durante la pandemia decidió compartir su gusto por el café y los
+                libros con el resto de personas que buscan un lugar tranquilo para trabajar Ver mas aquí"</p></a></div>
+    </section>
+    <!-- FOOTER AREA -->
+    <footer>
+        <p>&copy; LaBiblioteca 2022</p>
+        <div class="redes">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <a mailto="dani_gt_10@hotmail.com"><i class="fa-solid fa-at"></i></a>
+        </div>
+    </footer>
+    <!-- BUTTON COFFE -->
+    <a href="#" class="subir">
+        <i class="fa-solid fa-coffee"></i>
+    </a>
+    <!-- DEFINITION OF SCRIPT ANIMATION AND TRANSITION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</div>
+</body>
+
+</html>
