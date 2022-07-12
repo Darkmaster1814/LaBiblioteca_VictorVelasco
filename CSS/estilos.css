@@ -854,6 +854,7 @@ padding-top: 30px;
     /* Text2 of the main menu */
     /*  */.call2 {
         padding-top: 300px;
+        padding-left: 0px;
         font-size: 30px;
     }
     /* CONTENT OF EACH SECTION*/
