@@ -337,14 +337,14 @@ footer i {
 #SUBPAGE_PROMOCIONES{
     grid-column: 1/5;
     grid-row: 3/4;
-    background-image: url(/Imagenes/blurry-gradient-haikei.svg);
+    background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     background-position: center;
     background-size: cover;
 }
 #SUBPAGE_PROMOCIONES_MAIN{
     grid-column: 1/5;
     grid-row: 4/5;
-    background-image: url(/Imagenes/promociones.jpg);
+    background-image: url(../Imagenes/promociones.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -371,14 +371,14 @@ footer i {
 #SUBPAGE_MENU{
     grid-column: 1/5;
     grid-row: 3/4;
-    background-image: url(/Imagenes/blurry-gradient-haikei.svg);
+    background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     background-position: center;
     background-size: cover;
 }
 #SUBPAGE_MENU_MAIN{
     grid-column: 1/5;
     grid-row: 4/5;
-    background-image: url(/Imagenes/cafe-g5c7eef449_1920.jpg);
+    background-image: url(../Imagenes/cafe-g5c7eef449_1920.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -406,7 +406,7 @@ footer i {
 #SUBPAGE_UBICACION{
     grid-column: 1/5;
     grid-row: 3/4;
-    background-image: url(/Imagenes/blurry-gradient-haikei.svg);
+    background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     background-position: center;
     background-size: cover;
 }
@@ -497,7 +497,7 @@ padding-top: 30px;
 #MAPA{
     grid-column: 1/5;
     grid-row: 5/6;
-    background-image: url(/Imagenes/blurry-gradient-haikei.svg);
+    background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     background-position: center;
     background-size: cover;
 }
@@ -542,7 +542,7 @@ padding-top: 30px;
 #US{
     grid-column: 1/5;
     grid-row: 3/4;
-    background-image: url(/Imagenes/blurry-gradient-haikei.svg);
+    background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     background-position: center;
     background-size: cover;
 }
