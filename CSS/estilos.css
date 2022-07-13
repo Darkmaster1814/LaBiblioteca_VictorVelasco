@@ -19,7 +19,6 @@ h2 {
     color: #F2FEDC;
     text-align: center;
     text-transform: capitalize;
-    padding: 10px;
 }
 /* SUBTITLES STYLE TEXT OF WEBPAGE */
 h3{
@@ -28,7 +27,6 @@ h3{
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: italic;
     font-size: 50px;
-    text-align: center;
     text-transform: capitalize;
     transition: all 0.8s;
 }
@@ -59,10 +57,9 @@ p:hover {
 #ONEPAGE{
 display:grid;
 grid-template-rows: 35px 35px 600px 50px 800px 50px 600px 50px 600px 50px 600px 50px;
-grid-template-columns:25% 25% 25% 25% ;
+grid-template-columns:25% 25% 25% 25%;
 height: 100vh;
 margin: 0;
-padding: 10px;
 gap:5px;
 }
 /* HEADER */
@@ -75,64 +72,58 @@ header {
 }
 /* Header align */
 .barra {
+    display: inline-flex;
     float: right;
 }
 /* Logo */
 .logo {
-    display: inline-grid;
-    grid-column: 1/2;
-    grid-row: 1/3;
+    display: inline-flex;
     justify-items: start;
     align-items: center;
-    padding-left: 20px;
     color: aliceblue;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Cedarville Cursive', cursive;
     font-style: italic;
+    margin-left: 50px;
+    padding-top: 10px;
 }
 .logo span {
-    display: inline-grid;
-    grid-column: 2/2;
-    grid-row: 1/3;
+    display: inline-flex;
     color: black;
     text-shadow: 1px 1px #333;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-/* Header list icons social media */
-.barra i {
-    display: inline-grid;
-    grid-column: 2/5;
-    grid-row: 1/2;
-    justify-self: end;
-    align-self: center;
-    text-align: right;
-    grid-row-gap: 5px;
+.barra{
+    display: inline-flex;
+
+}
+.barra i{
+    display: inline-flex;
+    letter-spacing: 10px;
+    color: #F2FEDC;
+    font-size: 20px;
     padding-top: 5px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 18px;
 }
 /* Header list */
 .barra ul li {
+    display: inline-flex;
     list-style: none;
-    display: inline-grid;
-    grid-column: 2/5;
-    grid-row: 2/3;
-    justify-self: start;
-    align-self: center;
-    grid-column-gap: 20px;
-    padding-right:15px ;
+    justify-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 /* Header list text */
 .barra ul li a {  
-    color: aliceblue;
+    color: #F2FEDC;
     font-size: 30px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: italic;
+    gap:10px;
+    padding-right: 15px;
+    padding-top: 20px;
 }
 /* MAIN STYLES */
 main {
-    grid-area: main;
     grid-column: 1/5;
     grid-row: 3/4;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.349)), url(../Imagenes/Libreria.jpg);
@@ -142,20 +133,19 @@ main {
 /* Text1 of mainmenu */
 .call {
     color: #413028;
-    padding-top: 90px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: italic;
     font-size: 60px;
+    padding-top: 90px;
     text-align: center;
 }
 /* Text2 of the main menu */
 .call2 {
     color: #F2FEDC;
-    padding-top: 200px;
-    padding-left: 200px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-style: italic;
     font-size: 50px;
+    margin-top: 200px;
     text-align: center;
 }
 /* SUBTITLES BANNERS */
@@ -215,44 +205,40 @@ main {
 /* CONTENT OF EACH SECTION*/
 /* Propociones section */
 #VideoPromo {
+    display: flex;
     position: relative;
-    padding-top: 10px;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    grid-column: 1/5;
-    grid-row: 5/6;
+    width: inherit;
+    overflow:hidden;
     text-align: center;
-    justify-self: center;
-    align-self: center;
+    justify-items: center;
+    align-items:flex-start;
 }
 #TextoPromo {
-    grid-column: 1/5;
-    grid-row: 5/6;
+    display: flex;
     text-align: center;
-    justify-self: center;
-    align-self: center;
-    padding-top: 50px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 50px;
 }
 /* Menu section */
 #TextoMenu{
-    grid-column: 1/5;
-    grid-row: 7/8;
-    text-align: end;
-    justify-self: end;
-    align-self: center;
-    padding-right: 5%;
-    padding-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-items: flex-start;
+    align-items: center;
+    padding-top: 400px;
+    padding-left: 50px;
+/*     padding-right: 10px; */
 }
 /* Ubicacion section */
 #TextoUbicacion{
-    grid-column: 1/5;
-    grid-row: 9/10;
-    text-align: end;
-    justify-self: end;
-    align-self: center;
-    padding-right: 5%;
-    padding-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-items: flex-start;
+    align-items: center;
+    padding-top: 400px;
+    padding-left: 50px;
 }
 /* Nosotros section */
 #VideoNosotros {
@@ -271,8 +257,6 @@ main {
 #TextoNosotros {
     display: inline-grid;
     position: absolute;
-    grid-column: 3/5;
-    grid-row: 11/12;
     text-align: center;
     justify-self: end;
     align-self: center;
@@ -535,9 +519,7 @@ padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 35px 35px 50px 800px 50px;
-    padding: 20px;
     height: 100vh;
-    margin: 0;
     padding: 10px;
 }
 #US{
@@ -583,7 +565,7 @@ padding-top: 30px;
 
 /* MEDIA QWERYS FOR RESPONSIVE SCREEN WEBPAGE */
 /* Media qwery for medium sizes screens */
-@media only screen and (min-width:720px) and (max-width:899px){
+@media only screen and (min-width:780px) and (max-width:980px){
 
     /* SUBTITLES STYLE TEXT OF WEBPAGE */
     
@@ -601,30 +583,26 @@ padding-top: 30px;
     /* Header list icons social media */
     .barra i {
         font-size: 15px;
-        letter-spacing: 18px;
     }
     /* Header list text */
     .barra ul li a {  
         font-size: 20px;
+        padding-right: 15px;
+        padding-top: 20px;
+        gap:2px;
     }
     /* Text1 of mainmenu */
-    .call {
-        font-size: 60px;
-    }
-    /* Text2 of the main menu */
-    .call2 {
-        font-size: 50px;
-    }
+.call {
+    padding-top: 90px;
+    font-size: 40px;
+}
+/* Text2 of the main menu */
+.call2 {
+    font-size: 40px;
+    margin-top: 150px;
+}
     /* CONTENT OF EACH SECTION*/
     /* Propociones section */
-    #VideoPromo {
-        padding-top: 10px;
-        width: 100%;
-        height: 600px;
-        overflow: hidden;
-        grid-column: 2/4;
-        grid-row: 5/6;
-    }
     
     /* SUBWEBPAGES */
     /* MENU SUBPAGE */
@@ -686,7 +664,7 @@ padding-top: 30px;
 
 
 /* Media qwery for small sizes screens */
-@media only screen and (min-width:481px) and (max-width:720px){
+@media only screen and (min-width:600px) and (max-width:780px){
     /* TEXT TITLES STYLES */
     h2 {
         font-size: 40px;
@@ -703,49 +681,30 @@ padding-top: 30px;
     /* Logo */
     /*  */.logo {
         padding-top: 15px;
-        padding-left: 10px;
+        padding-left: 5px;
         font-size: 15px;
     }
     /* Header list icons social media */
     /*  */.barra i {
-        grid-column: 2/5;
-        grid-row: 1/2;
-        grid-row-gap: 5px;
-        padding-top: 15px;
+        padding-top: 5px;
         font-size: 10px;
         letter-spacing: 18px;
-    }
-    /* Header list */
-    /*  */.barra ul li {
-        grid-column: 2/5;
-        grid-row: 1/3;
-        grid-column-gap: 10px;
-        padding-right:15px ;
     }
     /* Header list text */
     /*  */.barra ul li a {  
         font-size: 15px;
     }
-    /* MAIN STYLES */
-    /* Text1 of mainmenu */
-    /*  */.call {
+    .call {
         padding-top: 90px;
         font-size: 40px;
     }
     /* Text2 of the main menu */
-    /*  */.call2 {
-        padding-top: 300px;
-        padding-left: 10px;
-        font-size: 30px;
+    .call2 {
+        font-size: 40px;
+        margin-top: 150px;
     }
-    
     /* CONTENT OF EACH SECTION*/
     /* Propociones section */
-    /*  */#VideoPromo {
-        padding-top: 10px;
-        grid-column: 1/4;
-        grid-row: 5/6;
-    }
     /* MENU SUBPAGE */
     /* Grid of UBICACION page */
     /*  */#UBIPAGE{
@@ -792,7 +751,7 @@ padding-top: 30px;
 
 
 /* Media qwery for smartphones sizes screens */
-@media only screen and (min-width:0px) and (max-width:481px){
+@media only screen and (min-width:0px) and (max-width:600px){
     /* TEXT TITLES STYLES */
    /*  */ h2 {
       /*  */  font-size: 20px;
@@ -811,64 +770,36 @@ padding-top: 30px;
     }
     /* Logo */
     /*  */.logo {
-        /*  */grid-column: 2/4;
-        /*  */grid-row: 1/2;
-        /*  */justify-items: center;
-        /*  */align-items: center;
-        /*  */text-align: center;
         /*  */padding-top: 0px;
-        /*  */padding-left: 180px;
+        /*  */padding-left: 120px;
         /*  */font-size: 15px;
-    }
-    /*  */.logo span {
-        /*  */grid-column: 2/2;
-        /*  */grid-row: 1/3;
     }
     /* Header list icons social media */
     /*  */.barra i {
-        /*  */grid-column: 1/5;
-        /*  */grid-row: 2/3;
-        /*  */justify-self: center;
-        /*  */align-self: center;
-        /*  */text-align: left;
-        /*  */grid-row-gap: 5px;
+        gap: 5px;
         /*  */padding-top: 0;
         /*  */font-size: 8px;
-        /*  */letter-spacing: 2px;
+        /*  */letter-spacing: 5px;
     }
     /* Header list */
-    /*  */.barra ul li {
-        /*  */grid-column: 1/5;
-        /*  */grid-row: 2/3;
-        /*  */grid-column-gap: 0px;
-       /*  */ padding-right:10px ;
-    }
     /* Header list text */
     /*  */.barra ul li a {  
         /*  */font-size: 10px;
+        gap:2px;
+        padding-right: 10px;
     }
     /* MAIN STYLES */
     /* Text1 of mainmenu */
-    /*  */.call {
+    .call {
         padding-top: 90px;
-        font-size: 40px;
-    }
-    /* Text2 of the main menu */
-    /*  */.call2 {
-        padding-top: 300px;
-        padding-left: 0px;
         font-size: 30px;
     }
-    /* CONTENT OF EACH SECTION*/
-    /* Propociones section */
-    /*  */#VideoPromo {
-        padding-top: 10px;
-       /*  */ width: 100vh;
-        height: 600px;
-        size-adjust: cover;
-        grid-column: 1/3;
-        grid-row: 5/6;
+    /* Text2 of the main menu */
+    .call2 {
+        font-size: 30px;
+        margin-top: 150px;
     }
+    /* CONTENT OF EACH SECTION*/
     /*  */footer p {
        /*  */ font-size: 15px;
     }
