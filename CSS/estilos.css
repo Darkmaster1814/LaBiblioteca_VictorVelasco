@@ -287,6 +287,10 @@ footer i {
 }
 /* BOTTON HOME STYLE */
 .subir {
+    grid-column: 4/5;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
     height: 40px;
     width: 40px;
     background-color: #C8AE53;
@@ -509,7 +513,8 @@ padding-top: 30px;
 #Mapita_text{
     grid-column: 2/3;
     grid-row: 1/2;
-    justify-self: end;
+    width: inherit;
+    justify-self: start;
     align-self: center;
     text-align: right;
 }
@@ -672,12 +677,16 @@ padding-top: 30px;
     /* SUBTITLES STYLE TEXT OF WEBPAGE */
     
     /*  */h3{
-       /*  */ font-size: 20px;
+       /*  */ font-size: 30px;
     }
     /* PARAGRAPHS STYLE  */
     /*  */p {
         /*  */font-size: 20px;
     }
+        /* BODY GRID AREA */
+    /*  */#ONEPAGE{
+    /*  */grid-template-rows: 20px 20px 600px 40px 600px 40px 500px 40px 500px 40px 500px 40px;
+}
     /* Logo */
     /*  */.logo {
         padding-top: 15px;
@@ -702,6 +711,24 @@ padding-top: 30px;
     .call2 {
         font-size: 40px;
         margin-top: 150px;
+    }
+    
+    #TextoPromo{
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+    #TextoMenu{
+        padding-top: 100px;
+        padding-left: 300px;
+    }
+    #TextoUbicacion{
+        padding-top: 350px;
+    }
+    #VideoNosotros{
+        height: 500px;
+    }
+    #TextoNosotros{
+        padding-top: 50px;
     }
     /* CONTENT OF EACH SECTION*/
     /* Propociones section */
@@ -754,7 +781,7 @@ padding-top: 30px;
 @media only screen and (min-width:0px) and (max-width:600px){
     /* TEXT TITLES STYLES */
    /*  */ h2 {
-      /*  */  font-size: 20px;
+      /*  */  font-size: 25px;
     }
     /* SUBTITLES STYLE TEXT OF WEBPAGE */
     /*  */h3{
@@ -766,7 +793,7 @@ padding-top: 30px;
     }
     /* BODY GRID AREA */
     /*  */#ONEPAGE{
-    /*  */grid-template-rows: 40px 40px 600px 50px 800px 50px 600px 50px 600px 50px 600px 50px;
+    /*  */grid-template-rows: 20px 20px 600px 30px 400px 30px 300px 30px 300px 30px 300px 30px;
     }
     /* Logo */
     /*  */.logo {
@@ -799,6 +826,23 @@ padding-top: 30px;
         font-size: 30px;
         margin-top: 150px;
     }
+    #TextoPromo{
+        padding-top: 30px;
+        padding-left: 50px;
+    }
+    #TextoMenu{
+        padding-top: 100px;
+        padding-left: 200px;
+    }
+    #TextoUbicacion{
+        padding-top: 200px;
+    }
+    #VideoNosotros{
+        height: 300px;
+    }
+    #TextoNosotros{
+        padding-top: 50px;
+    }
     /* CONTENT OF EACH SECTION*/
     /*  */footer p {
        /*  */ font-size: 15px;
@@ -812,7 +856,7 @@ padding-top: 30px;
     /* MENU SUBPAGE */
     /* Grid of UBICACION page */
     /*  */#UBIPAGE{
-       /*  */ grid-template-rows: 35px 35px 50px 1800px 50px 600px 50px;
+       /*  */ grid-template-rows: 35px 35px 30px 1800px 30px 500px 35px;
     }
     /*  */.SUBPAGE_UBICACIÓN_GALERIA{
     /*  */grid-template-columns: repeat(1, fr);
@@ -852,7 +896,7 @@ padding-top: 30px;
     }
     /* US SUBPAGE */
     /*  */.SUBPAGE_US_IMAGE{
-      /*  */  padding-left: 0px;
+      /*  */  padding-left: 5px;
     background-size: cover;
     }
     /*  */.SUBPAGE_US_TEXT{
