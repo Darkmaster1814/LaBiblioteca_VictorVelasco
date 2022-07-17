@@ -21,8 +21,7 @@
     <title>La Biblioteca</title>
 </head>
 <!-- ONE PAGE WEB  -->
-<body>
-    <div class="ContenedorOnePage">    
+<body class="ContenedorOnePage">    
     <!-- Header -->
     <header>
         <div class="logo"><h2>La<span>Biblioteca</span></h2></div>
@@ -40,38 +39,36 @@
         </nav>
     </header>
     <!-- HOME # AREA -->
-    <main>
-        <div data-aos="fade-up" class="call"> <strong>Café y libros</strong></div>
-        <div data-aos="fade-down" class="call2">La mejor compañía Internet que si funciona</div>
+    <main class="main">
+        <div data-aos="fade-up" class="call"> <strong><h2>Café y libros</strong></h2></div>
+        <div data-aos="fade-down" class="call2"><h2>La mejor compañía Internet que si funciona</h2></div>
     </main>
     <!-- PROMO AREA -->
     <h2 id="PROMOS">Promociones</h2>
-    <section id="PROMOS_SECTION">
-        <video data-aos="fade-right" class="VIDEOPROMO" src="./Video/Promociones.mp4" width="100%" autoplay muted>Tu
-                navegador no soporta HTML5 video</video>
-        <div data-aos="fade-left" class="TEXTOPROMO"><a href="./HTML/Promociones.html" target="_blank"><h3>Ver Nuestras Promociones</h3></a></div>
+    <section class="PromoContainer">
+        <video data-aos="fade-right" class="VideoPromo" src="./Video/Promociones.mp4" autoplay muted>Tu navegador no soporta HTML5 video</video>
+        <div data-aos="fade-left" class="TextoPromo"><a href="./HTML/Promociones.html" target="_blank"><h3>Ver Promociones</h3></a></div>
     </section>
-
     <!-- MENU AREA -->
     <h2 id="MENU">Menú</h2>
-    <section id="MENU_SECTION">
-        <div data-aos="fade-up-left" id="TextoMenu"><a href="./HTML/Menu.html" target="_blank"><h3>Visita Nuestro Menú Aquí</h3></a></div>
+    <section class="MenuContainer">
+        <div data-aos="fade-down" class="TextoMenu"><a href="./HTML/Menu.html" target="_blank"><h3>Visita Nuestro Menú Aquí</h3></a></div>
     </section>
     <!-- LOCATION AREA -->
     <h2 id="UBICACION">Ubicación</h2>
-    <section id="UBICACION_SECTION">
-        <div data-aos="fade-down" id="TextoUbicacion"><a href="./HTML/Conocenos.html" target="_blank"><h3>Ubica<br> Nuestras Sucursales Aquí</h3></a></div>
+    <section class="UbicacionContainer">
+        <div data-aos="fade-down" class="TextoUbicacion"><a href="./HTML/Conocenos.html" target="_blank"><h3>Ubica<br> Nuestras Sucursales Aquí</h3></a></div>
     </section>
+
     <!-- ABOUT US AREA -->
     <h2 id="NOSOTROS">Nosotros</h2>
-    <section id="NOSOTROS_UBICACION">
-        <div data-aos="fade-right" id="VideoNosotros"><video src="./Video/Conversation - 180.mp4" autoplay muted>Tu
-            navegador no soporta HTML5 video</video></div>
-        <div data-aos="fade-left" id="TextoNosotros"><a href="./HTML/Nosotros.html" target="_blank"><p>"La biblioteca nace en 2021, de la
-                mano de una joven emprendedora que durante la pandemia decidió compartir su gusto por el café y los
-                libros con el resto de personas que buscan un lugar tranquilo para trabajar Ver mas aquí"</p></a></div>
+    <section class="NosotrosContainer">
+        <video data-aos="fade-right" class="VideoNosotros" src="./Video/Conversation - 180.mp4" autoplay muted>Tu
+            navegador no soporta HTML5 video</video>
+    <div data-aos="fade-left" class="TextoNosotros"><a href="./HTML/Nosotros.html" target="_blank"><p>"La biblioteca nace en 2021 con un concepto totalmente nuevo"<br>Ver mas aquí</p></a>
+    </div>
     </section>
-    <!-- FOOTER AREA -->
+
     <footer>
         <p>&copy; LaBiblioteca 2022</p>
         <div class="redes">
@@ -89,7 +86,7 @@
     <script>
         AOS.init();
     </script>
-</div>
+
 </body>
 <!-- Proyecto subido a Github Le edite algo en github  -->
 
