@@ -4,98 +4,129 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* TRANSITION OF SCROLL */
 html {
     scroll-behavior: smooth;
 }
-a{
+
+/* Icons */
+i {
+    font-size: 1rem;
+    color: #3a2b00;
+}
+
+a {
     text-decoration: none;
-    color: #F2FEDC;
+    color: #f2fedc;
     font-size: 1.5rem;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
 }
+
 /* TEXT TITLES STYLES */
 h2 {
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
     font-size: 3rem;
-    color: #F2FEDC;
+    color: #f2fedc;
     text-align: center;
     justify-content: center;
     text-transform: capitalize;
 }
+
 /* SUBTITLES STYLE TEXT OF WEBPAGE */
-h3{
+h3 {
     display: inline-grid;
-    color: #3A2B00;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #3a2b00;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
     justify-content: center;
     font-size: 2.5rem;
     text-transform: capitalize;
     transition: all 0.8s;
 }
+
 /* Animation for the click text */
 h3:hover {
     display: inline-grid;
     transform: scale(1.05);
-    color: #C8AE53;
+    color: #c8ae53;
     transition: all 0.8s;
 }
+
 /* PARAGRAPHS STYLE  */
-/*  */p {
+/*  */
+p {
     display: inline-grid;
-    color: #00755D;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #00755d;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
     font-size: 2rem;
     justify-content: center;
     text-transform: capitalize;
     transition: all 0.8s;
 }
+
 p:hover {
     display: inline-grid;
     transform: scale(1.05);
-    color: #C8AE53;
+    color: #c8ae53;
     transition: all 0.8s;
 }
+
+h4 {
+    display: inline-grid;
+    color: #00755d;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
 /* Style of each section container */
-section{
-    background-color: #F2FEDC;   
+section {
+    background-color: #f2fedc;
 }
+
 /* BODY GRID AREA */
-.ContenedorOnePage{
-display:grid;
-grid-template-areas:"header header"
-                    "header header"
-                    "main main"
-                    "promo1 promo1"
-                    "promo2 promo2"
-                    "menu1 menu1"
-                    "menu2 menu2"
-                    "ubicacion1 ubicacion1"
-                    "ubicacion2 ubicacion2"
-                    "nosotros1 nosotros1"
-                    "nosotros2 nosotros2"
-                    "footer footer";
-grid-template-columns: 1fr 1fr;
-height: 100vh;
-justify-content:stretch;
-align-content:stretch;
-
-
+.ContenedorOnePage {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "header header"
+        "main main"
+        "promo1 promo1"
+        "promo2 promo2"
+        "menu1 menu1"
+        "menu2 menu2"
+        "ubicacion1 ubicacion1"
+        "ubicacion2 ubicacion2"
+        "nosotros1 nosotros1"
+        "nosotros2 nosotros2"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    justify-content: stretch;
+    align-content: stretch;
 }
+
 /* HEADER */
 header {
-grid-area:header;
-display: grid;
-grid-template-areas:"logo barra"
-                    "logo barra";
-    background-image:linear-gradient(to bottom,rgba(151, 92, 44, 0.813) 30%,rgb(233, 172, 87),rgba(211, 151, 67,0.7)) ;
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "logo barra"
+        "logo barra";
+    background-image: linear-gradient(to bottom,
+            rgba(151, 92, 44, 0.813) 30%,
+            rgb(233, 172, 87),
+            rgba(211, 151, 67, 0.7));
     position: relative;
     background-size: cover;
 }
+
 /* Logo */
 .logo {
     grid-area: logo;
@@ -104,87 +135,102 @@ grid-template-areas:"logo barra"
     text-align: left;
     padding-left: 5%;
 }
-.logo h2{
+
+.logo h2 {
     color: aliceblue;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: "Cedarville Cursive", cursive;
     font-style: italic;
     font-size: 2.5rem;
 }
+
 .logo span {
     color: black;
     text-shadow: 1px 1px #333;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: "Kdam Thmor Pro", sans-serif;
 }
+
 /* Header align */
-nav{
+nav {
     grid-area: barra;
     justify-self: right;
     align-self: center;
     padding-right: 5%;
 }
-nav i{
+
+nav i {
     letter-spacing: 10px;
     text-align: center;
     padding-top: 2%;
     font-size: 1.2rem;
 }
+
 /* Header list */
 nav ul li {
     display: inline-grid;
 }
+
 /* MAIN */
 /* MAIN STYLES */
-.main {
+.MAIN {
     grid-area: main;
     display: grid;
-    grid-template-areas: "main1 main1"
-                        "main2 main2";
+    grid-template-areas:
+        "main1 main1"
+        "main2 main2";
     align-content: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.349)), url(../Imagenes/Libreria.jpg);
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.349)),
+        url(../Imagenes/Libreria.jpg);
     width: 100%;
-    height:600px;
+    height: 600px;
     background-position: center;
     background-size: cover;
-
 }
+
 /* Text1 of mainmenu */
-.call{
+.call {
     grid-area: main1;
     padding-top: 2%;
 }
-.call h2{
+
+.call h2 {
     color: #413028;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
     font-size: 3rem;
     text-align: center;
 }
+
 /* Text2 of the main menu */
-.call2{
+.call2 {
     grid-area: main2;
     padding-top: 10%;
 }
-.call2 h2{
-    color: #F2FEDC;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+
+.call2 h2 {
+    color: #f2fedc;
+    font-family: "Kdam Thmor Pro", sans-serif;
     font-style: italic;
     font-size: 2.5rem;
     text-align: center;
 }
+
 /* PROMOCIONES */
 /* SUBTITLES BANNERS position */
-#PROMOS{
+#PROMOS {
     grid-area: promo1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
     align-self: center;
 }
+
 /* Containerpromo */
-.PromoContainer{
+.PromoContainer {
     grid-area: promo2;
     display: flex;
     width: 100%;
@@ -194,78 +240,88 @@ nav ul li {
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* Video promo video of coffee in one page */
-.VideoPromo{
+.VideoPromo {
     width: 60%;
-    overflow:hidden;
+    overflow: hidden;
     padding: 2%;
 }
-.TextoPromo{
+
+.TextoPromo {
     padding: 2%;
     text-align: center;
 }
+
 /* MENU */
-#MENU{
+#MENU {
     grid-area: menu1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
     align-self: center;
 }
-.MenuContainer{
+
+.MenuContainer {
     grid-area: menu2;
     background-image: url(../Imagenes/Menu.jpg);
     width: 100%;
     height: 600px;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;    
+    align-self: center;
 }
-.TextoMenu{
+
+.TextoMenu {
     padding-top: 20%;
     padding-left: 20%;
     text-align: center;
 }
+
 /* UBICACION */
-#UBICACION{
+#UBICACION {
     grid-area: ubicacion1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
     align-self: center;
 }
-.UbicacionContainer{
+
+.UbicacionContainer {
     grid-area: ubicacion2;
     background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
     width: 100%;
     height: 600px;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;    
+    align-self: center;
 }
-.TextoUbicacion{
+
+.TextoUbicacion {
     padding-top: 22%;
     padding-left: 20%;
     text-align: center;
 }
+
 /* NOSOTROS */
-#NOSOTROS{
+#NOSOTROS {
     grid-area: nosotros1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
     align-self: center;
 }
+
 /* Containerpromo */
-.NosotrosContainer{
+.NosotrosContainer {
     grid-area: nosotros2;
     display: flex;
     flex-wrap: wrap;
@@ -275,49 +331,63 @@ nav ul li {
     width: 100%;
     height: auto;
 }
+
 /* Video promo video of coffee in one page */
-.VideoNosotros{
-    width:inherit;
-    overflow:hidden;
+.VideoNosotros {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
     padding: 5%;
 }
+
 .TextoNosotros {
     text-align: center;
+    padding-top: 30%;
     padding: 2%;
-} 
+    margin: 5%;
+}
+
+.TextoNosotros i {
+    font-size: 3rem;
+}
+
 /* FOOTER */
 footer {
     grid-area: footer;
     display: grid;
-    grid-template-areas: "footer1"
-                        "footer2";
+    grid-template-areas:
+        "footer1"
+        "footer2";
     justify-content: center;
     align-items: center;
-    background-color: #00755D;
+    background-color: #00755d;
     min-height: 50px;
     width: 100%;
 }
+
 footer p {
     grid-area: footer1;
     font-size: 1.2rem;
-    color: #F2FEDC;
+    color: #f2fedc;
     justify-self: center;
     align-items: center;
     text-align: center;
 }
+
 footer i {
-    color: #F2FEDC;
+    color: #f2fedc;
     font-size: 1.2rem;
     letter-spacing: 1.4rem;
     justify-self: center;
     align-items: center;
     text-align: center;
 }
+
 /* BOTTON HOME STYLE */
 .subir {
     height: 40px;
     width: 40px;
-    background-color: #C8AE53;
+    background-color: #c8ae53;
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -327,144 +397,163 @@ footer i {
     text-align: center;
     border: 5px solid rgba(211, 151, 67, 0.707);
     border-radius: 50%;
-    box-shadow: 0 0 5px #F2FEDC;
+    box-shadow: 0 0 5px #f2fedc;
     transition: all 0.8s;
 }
+
 .subir:hover {
-    transform: scale(1.10);
+    transform: scale(1.1);
     transition: all 0.8s;
 }
 
 /* SUBWEBPAGES */
-
 /* PROMOCIONES SUBPAGE */
 /* Grid of promo page */
-.SUBPAGE_Promo_Container{
-    display:grid;
-    grid-template-areas:"header header"
-    "header header"
-    "PROMO1 PROMO1"
-    "PROMO2 PROMO2"
-    "footer footer";
+.SUBPAGE_Promo_Container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "header header"
+        "PROMO1 PROMO1"
+        "PROMO2 PROMO2"
+        "footer footer";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    justify-content:stretch;
-    align-content:stretch;
+    height: 100%;
+    width: auto;
+    justify-content: stretch;
+    align-content: stretch;
 }
-#SUBPAGE_PROMOCIONES{
-    grid-area:PROMO1;
+
+#SUBPAGE_PROMOCIONES {
+    grid-area: PROMO1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
 }
-.SUBPAGE_PromoContainer{
+
+.SUBPAGE_PromoContainer {
     grid-area: PROMO2;
     background-image: url(../Imagenes/board-1854180_1920.jpg);
     width: 100%;
     height: 600px;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center; 
+    align-self: stretch;
 }
-.SUBPAGE_Promo_Text{
+
+.SUBPAGE_Promo_Text {
     grid-area: PROMO2;
-    justify-self: left;
+    justify-self: center;
     align-self: center;
     padding-top: 20%;
+    padding-left: 30%;
 }
+
 /* MENU SUBPAGE */
 /* Grid of MENU page */
-.SUBPAGE_Menu_Container{
-    display:grid;
-    grid-template-areas:"header header"
-    "header header"
-    "MENU1 MENU1"
-    "MENU2 MENU2"
-    "footer footer";
+.SUBPAGE_Menu_Container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "header header"
+        "MENU1 MENU1"
+        "MENU2 MENU2"
+        "footer footer";
     grid-template-columns: 1fr 1fr;
     height: 100vh;
-    justify-content:stretch;
-    align-content:stretch;
+    justify-content: stretch;
+    align-content: flex-start;
 }
-#SUBPAGE_MENU{
-    grid-area:MENU1;
+
+#SUBPAGE_MENU {
+    grid-area: MENU1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
     align-self: center;
 }
-.SUBPAGE_MenuContainer{
+
+.SUBPAGE_MenuContainer {
     grid-area: MENU2;
     background-image: url(../Imagenes/cafe-g5c7eef449_1920.jpg);
     width: 100%;
     height: 600px;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center; 
+    align-self: stretch;
 }
-.SUBPAGE_Menu_Text{
+
+.SUBPAGE_Menu_Text {
     grid-area: MENU2;
     justify-self: center;
     align-self: center;
     text-align: center;
     padding: 10%;
+    padding-top: 35%;
 }
-/* MENU SUBPAGE */
+
+/* UBICACION SUBPAGE */
 /* Grid of UBICACION page */
-.SUBPAGE_Ubicacion_Container{
-    display:grid;
+.SUBPAGE_Ubicacion_Container {
+    display: grid;
     grid-template-areas:
-    "header header"
-    "header header"
-    "GALERIA1 GALERIA1"
-    "GALERIA2 GALERIA2"
-    "MAPA1 MAPA1"
-    "MAPA2 MAPA2"
-    "footer footer";
+        "header header"
+        "header header"
+        "GALERIA1 GALERIA1"
+        "GALERIA2 GALERIA2"
+        "MAPA1 MAPA1"
+        "MAPA2 MAPA2"
+        "footer footer";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    justify-content:stretch;
-    align-content:stretch;
+    height: auto;
+    justify-content: stretch;
+    align-content: flex-start;
 }
-#SUBPAGE_UBICACION{
-    grid-area:GALERIA1;
+
+#SUBPAGE_UBICACION {
+    grid-area: GALERIA1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
 }
-.SUBPAGE_UBICACIÓN_GALERIA{
-grid-area: GALERIA2;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content:space-around;
-align-items: stretch;
-gap:2%;
+
+.SUBPAGE_UBICACIÓN_GALERIA {
+    grid-area: GALERIA2;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 2%;
+    padding-top: 2%;
 }
+
 .Item {
     border-radius: 2px;
     transition: all 0.8s;
 }
+
 .Item:hover {
     transform: scale(1.05);
     transition: all 0.8s;
     border-radius: 2px;
-    box-shadow: 2px 2px 5px #3A2B00;
+    box-shadow: 2px 2px 5px #3a2b00;
 }
 
 .Foto1 {
-width: 400px;
-height: auto;
+    width: 400px;
+    height: auto;
 }
 
 .Foto2 {
@@ -502,419 +591,569 @@ height: auto;
     height: auto;
 }
 
-#MAPA{
-    grid-area:MAPA1;
+/* Maps section */
+#MAPA {
+    grid-area: MAPA1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
 }
-
 
 .Maps_Container {
     grid-area: MAPA2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: stretch;
 }
-.Mapita{
-width: 50%;
-height: auto;
+
+.Mapita {
+    width: 50%;
+    height: auto;
 }
-.Mapita_text{
+
+.Mapita_text {
     padding: 2%;
     padding-top: 10%;
     text-align: center;
 }
+
+.Mapita_text i {
+    font-size: 3rem;
+}
+
 /* US SUBPAGE */
 /* Grid of US page */
-.SUBPAGE_Us_Container{
-    display:grid;
-    grid-template-areas:"header header"
-    "header header"
-    "US1 US1"
-    "US2 US2"
-    "footer footer";
+.SUBPAGE_Us_Container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "header header"
+        "US1 US1"
+        "US2 US2"
+        "footer footer";
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    justify-content:stretch;
-    align-content:stretch;
+    height: 100%;
+    justify-content: stretch;
+    align-content: flex-start;
 }
-#US{
-    grid-area:US1;
+
+#US {
+    grid-area: US1;
     background-image: url(../Imagenes/blurry-gradient-haikei.svg);
     width: 100%;
     background-position: center;
-    background-size:cover; 
+    background-size: cover;
     justify-self: center;
-    align-self: center;
+    align-self: stretch;
 }
-.SUBPAGE_UsContainer{
-    grid-area: US2;;
+
+.SUBPAGE_UsContainer {
+    grid-area: US2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5%;
 }
 
-.SUBPAGE_Us_Imagen{
-justify-self: center;
-align-self: center;
-width: 30%;
-height: auto;
-gap: 2%;
-padding: 2%;
+.SUBPAGE_Us_Imagen {
+    justify-self: center;
+    align-self: center;
+    width: 30%;
+    height: auto;
 }
-.SUBPAGE_Us_TEXT1{
-justify-self: center;
-align-self: center;
-text-align:center;
+
+.SUBPAGE_Us_TEXT1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
 }
-.SUBPAGE_US_TEXT2  {
+
+.SUBPAGE_US_TEXT2 {
     justify-self: center;
     align-self: justify;
-    text-align:center;
+    text-align: center;
 }
 
 /* MEDIA QWERYS FOR RESPONSIVE SCREEN WEBPAGE */
 /* Media qwery for medium sizes screens */
-@media only screen and (min-width:780px) and (max-width:980px){
+@media only screen and (min-width: 600px) and (max-width: 770px) {
 
-    /* SUBTITLES STYLE TEXT OF WEBPAGE */
-    
-    /*  */h3{
-       /*  */ font-size: 30px;
-    }
-    /* PARAGRAPHS STYLE  */
-   /*  */ p {
-      /*  */  font-size: 25px;
-    }
-    /* Logo */
-    .logo {
-        padding-left: 20px;
-    }
-    /* Header list icons social media */
-    .barra i {
-        font-size: 15px;
-    }
-    /* Header list text */
-    .barra ul li a {  
-        font-size: 20px;
-        padding-right: 15px;
-        padding-top: 20px;
-        gap:2px;
-    }
-    /* Text1 of mainmenu */
-.call {
-    padding-top: 90px;
-    font-size: 40px;
-}
-/* Text2 of the main menu */
-.call2 {
-    font-size: 40px;
-    margin-top: 150px;
-}
-    /* CONTENT OF EACH SECTION*/
-    /* Propociones section */
-    
-    /* SUBWEBPAGES */
-    /* MENU SUBPAGE */
-    /* Grid of UBICACION page */
-    /*  */#UBIPAGE{
-       /*  */ grid-template-rows: 35px 35px 50px 800px 50px 600px 50px;
-    }
-    /*  */.SUBPAGE_UBICACIÓN_GALERIA{
-
-   /*  */ grid-template-columns: repeat(3, fr);
-    /*  */grid-template-rows: 200px 200px 200px 200px;
-    }
-    /*  */.Foto4 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 2/3;
-    }
-    
-    /*  */.Foto5 {
-        /*  */grid-column: 2/3;
-        /*  */grid-row: 2/3;
-    }
-    
-    /*  */.Foto6 {
-       /*  */ grid-column: 3/4;
-        /*  */grid-row: 2/3;
-    }
-    
-    /*  */.Foto7 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 3/4;
-    }
-    
-    /*  */.Foto8 {
-       /*  */ grid-column: 2/3;
-        /*  */grid-row: 3/4;
-    }
-    
-    #MAPA{
-        grid-column: 1/5;
-        grid-row: 5/6;
-        background-image: url(/Imagenes/blurry-gradient-haikei.svg);
-        background-position: center;
-        background-size: cover;
-    }
-    /* US SUBPAGE */
-    /* Grid of US page */
-    /*  */#USPAGE{
-       /*  */ grid-template-rows: 35px 35px 50px 800px 50px;
-    }
-    /*  */.SUBPAGE_US_IMAGE{
-        /*  */padding-left: 200px;
-    }
-    /*  */.SUBPAGE_US_TEXT{
-        /*  */padding-right: 30px;
-    }
-    /*  */.SUBPAGE_US_TEXT2  {
-       /*  */ padding-right: 30px;}
-    }
-
-
-/* Media qwery for small sizes screens */
-@media only screen and (min-width:600px) and (max-width:780px){
     /* TEXT TITLES STYLES */
     h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
-    /* SUBTITLES STYLE TEXT OF WEBPAGE */
-    
-    /*  */h3{
-       /*  */ font-size: 30px;
-    }
-    /* PARAGRAPHS STYLE  */
-    /*  */p {
-        /*  */font-size: 20px;
-    }
-        /* BODY GRID AREA */
-    /*  */#ONEPAGE{
-    /*  */grid-template-rows: 20px 20px 600px 40px 600px 40px 500px 40px 500px 40px 500px 40px;
-}
-    /* Logo */
-    /*  */.logo {
-        padding-top: 15px;
-        padding-left: 5px;
-        font-size: 15px;
-    }
-    /* Header list icons social media */
-    /*  */.barra i {
-        padding-top: 5px;
-        font-size: 10px;
-        letter-spacing: 18px;
-    }
-    /* Header list text */
-    /*  */.barra ul li a {  
-        font-size: 15px;
-    }
-    .call {
-        padding-top: 90px;
-        font-size: 40px;
-    }
-    /* Text2 of the main menu */
-    .call2 {
-        font-size: 40px;
-        margin-top: 150px;
-    }
-    
-    #TextoPromo{
-        padding-left: 200px;
-        padding-top: 50px;
-    }
-    #TextoMenu{
-        padding-top: 100px;
-        padding-left: 300px;
-    }
-    #TextoUbicacion{
-        padding-top: 350px;
-    }
-    #VideoNosotros{
-        height: 500px;
-    }
-    #TextoNosotros{
-        padding-top: 50px;
-    }
-    /* CONTENT OF EACH SECTION*/
-    /* Propociones section */
-    /* MENU SUBPAGE */
-    /* Grid of UBICACION page */
-    /*  */#UBIPAGE{
-       /*  */ grid-template-rows: 35px 35px 50px 1000px 50px 600px 50px;
-    }
-    /*  */.SUBPAGE_UBICACIÓN_GALERIA{
-    /*  */grid-template-columns: repeat(2, fr);
-    /*  */grid-template-rows: 200px 200px 200px 200px 200px;
-    }
-    /*  */.Foto3 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 2/3;
-    }
-    /*  */.Foto4 {
-       /*  */ grid-column: 2/3;
-        /*  */grid-row: 2/3;
-    }
-    /*  */.Foto5 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 3/4;
-    }
-    /*  */.Foto6 {
-       /*  */ grid-column: 2/3;
-        /*  */grid-row: 3/4;
-    }
-    /*  */.Foto7 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 4/5;
-    }
-    
-    /*  */.Foto8 {
-       /*  */ grid-column: 2/3;
-        /*  */grid-row: 4/5;
-    }
-    /*  */.SUBPAGE_US_IMAGE{
-       /*  */ padding-left: 150px;
-    }
-   /*  */ .SUBPAGE_US_TEXT{
-     /*  */   padding-right: 25px;
-    }
-    /*  */.SUBPAGE_US_TEXT2  {
-       /*  */ padding-right: 25px;}
-    }    
 
-
-/* Media qwery for smartphones sizes screens */
-@media only screen and (min-width:0px) and (max-width:600px){
-    /* TEXT TITLES STYLES */
-   /*  */ h2 {
-      /*  */  font-size: 25px;
-    }
     /* SUBTITLES STYLE TEXT OF WEBPAGE */
-    /*  */h3{
-        /*  */font-size: 20px;
+    h3 {
+        font-size: 2rem;
     }
+
     /* PARAGRAPHS STYLE  */
-    /*  */p {
-        /*  */font-size: 15px;
+    p {
+        font-size: 1.8rem;
     }
-    /* BODY GRID AREA */
-    /*  */#ONEPAGE{
-    /*  */grid-template-rows: 30px 30px 600px 30px 400px 30px 300px 30px 300px 30px 300px 30px;
+
+    h4 {
+        font-size: 1.5rem;
     }
+
+    /* HEADER */
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "barra barra";
+        background-image: linear-gradient(to bottom,
+                rgba(151, 92, 44, 0.813) 30%,
+                rgb(233, 172, 87),
+                rgba(211, 151, 67, 0.7));
+        position: relative;
+        background-size: cover;
+    }
+
     /* Logo */
-    /*  */.logo {
-        /*  */padding-top: 0px;
-        /*  */padding-left: 120px;
-        /*  */font-size: 15px;
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
     }
-    /* Header list icons social media */
-    /*  */.barra i {
-        gap: 5px;
-        /*  */padding-top: 0;
-        /*  */font-size: 8px;
-        /*  */letter-spacing: 5px;
+
+    .logo h2 {
+        font-size: 2.5rem;
     }
-    /* Header list */
-    /* Header list text */
-    /*  */.barra ul li a {  
-        /*  */font-size: 10px;
-        gap:2px;
-        padding-right: 10px;
+
+    /* Header align */
+    nav {
+        grid-area: barra;
+        justify-self: right;
+        align-self: center;
+        padding: 2%;
     }
-    /* MAIN STYLES */
+
+    nav i {
+        justify-self: center;
+        align-self: stretch;
+        letter-spacing: 10px;
+        text-align: center;
+        padding-left: 2%;
+        font-size: 1rem;
+    }
+
     /* Text1 of mainmenu */
-    .call {
-        padding-top: 90px;
-        font-size: 30px;
+    .call h2 {
+        font-size: 2.5rem;
     }
+
     /* Text2 of the main menu */
-    .call2 {
-        font-size: 30px;
-        margin-top: 150px;
+    .call2 h2 {
+        font-size: 1.5rem;
     }
-    #TextoPromo{
-        padding-top: 30px;
-        padding-left: 50px;
+
+    /* Containerpromo */
+    .PromoContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
     }
-    #TextoMenu{
-        padding-top: 100px;
-        padding-left: 200px;
+
+    /* Video promo video of coffee in one page */
+    .VideoPromo {
+        width: inherit;
+        height: auto;
+        overflow: hidden;
+        padding: 2%;
     }
-    #TextoUbicacion{
-        padding-top: 200px;
+
+    .TextoPromo {
+        padding: 2%;
+        text-align: center;
     }
-    #VideoNosotros{
-        height: 300px;
+
+    /* Icon Nosotros size */
+    .TextoNosotros i {
+        font-size: 2.5rem;
     }
-    #TextoNosotros{
-        padding-top: 50px;
+
+    /* Ubicacion size an position map */
+    .Maps_Container {
+        flex-direction: column;
     }
-    /* CONTENT OF EACH SECTION*/
-    /*  */footer p {
-       /*  */ font-size: 15px;
+
+    .Mapita {
+        width: inherit;
     }
-    /*  */footer i {
-       /*  */ font-size: 15px;
-        /*  */letter-spacing: 12px;
+
+    .Mapita_text i {
+        font-size: 2rem;
     }
-    /* MENU SUBPAGE */
-    /* Grid of MENU page */
-    /* MENU SUBPAGE */
-    /* Grid of UBICACION page */
-    /*  */#UBIPAGE{
-       /*  */ grid-template-rows: 35px 35px 30px 1800px 30px 500px 35px;
+
+    /* US subpage styles */
+    .SUBPAGE_UsContainer {
+        flex-direction: column;
     }
-    /*  */.SUBPAGE_UBICACIÓN_GALERIA{
-    /*  */grid-template-columns: repeat(1, fr);
-    /*  */grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+}
+
+/* Media qwery for small sizes screens*/
+@media only screen and (min-width: 470px) and (max-width: 599px) {
+
+    /* TEXT TITLES STYLES */
+    h2 {
+        font-size: 1.5rem;
     }
-    /*  */.Foto2 {
-        /*  */grid-column: 1/2;
-        /*  */grid-row: 2/3;
+
+    /* SUBTITLES STYLE TEXT OF WEBPAGE */
+    h3 {
+        font-size: 1.2rem;
     }
-    /*  */.Foto3 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 3/4;
+
+    /* PARAGRAPHS STYLE  */
+    p {
+        font-size: 1.2rem;
     }
-    /*  */.Foto4 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 4/5;
-    } 
-    /*  */.Foto5 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 5/6;
+
+    /* Other titles styles */
+    h4 {
+        font-size: 1rem;
     }
-    /*  */.Foto6 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 6/7;
+
+    /* Header list styles */
+    a {
+        font-size: 1rem;
     }
-    /*  */.Foto7 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 7/8;
+
+    /* HEADER */
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "barra barra";
+        background-image: linear-gradient(to bottom,
+                rgba(151, 92, 44, 0.813) 30%,
+                rgb(233, 172, 87),
+                rgba(211, 151, 67, 0.7));
+        position: relative;
+        background-size: cover;
     }
-    /*  */.Foto8 {
-       /*  */ grid-column: 1/2;
-        /*  */grid-row: 8/9;
+
+    /* Logo */
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
     }
-    /*  */.Mapita{
-       /*  */ width: 200px;
-        /*  */height: 200px;
+
+    .logo h2 {
+        color: aliceblue;
+        font-family: "Cedarville Cursive", cursive;
+        font-style: italic;
+        font-size: 1.5rem;
     }
-    /* US SUBPAGE */
-    /*  */.SUBPAGE_US_IMAGE{
-      /*  */  padding-left: 5px;
-    background-size: cover;
+
+    /* Header align */
+    nav {
+        grid-area: barra;
+        justify-self: right;
+        align-self: center;
+        padding: 2%;
     }
-    /*  */.SUBPAGE_US_TEXT{
-       /*  */ padding-right: 5px;
+
+    nav i {
+        justify-self: center;
+        align-self: stretch;
+        letter-spacing: 10px;
+        text-align: center;
+        padding-left: 2%;
+        font-size: 1rem;
     }
-   /*  */ .SUBPAGE_US_TEXT2  {
-        /*  */padding-right: 5px;}
-    }   
+
+    /* MAIN */
+    .MAIN {
+        height: 400px;
+    }
+
+    /* Text1 of mainmenu */
+    .call h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Text2 of the main menu */
+    .call2 h2 {
+        font-size: 1rem;
+    }
+
+    /* Containerpromo */
+    .PromoContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* Video promo video of coffee in one page */
+    .VideoPromo {
+        width: inherit;
+        height: auto;
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .TextoPromo {
+        padding: 2%;
+        text-align: center;
+    }
+
+    /* MENU */
+    .MenuContainer {
+        height: 400px;
+    }
+
+    /* UBICACION */
+    .UbicacionContainer {
+        height: 400px;
+    }
+
+    /* Icon Nosotros size */
+    .TextoNosotros i {
+        font-size: 2rem;
+    }
+
+    /* Subpages */
+    .SUBPAGE_PromoContainer {
+        height: 400px;
+    }
+
+    .SUBPAGE_MenuContainer {
+        height: 400px;
+    }
+
+    /* Ubicacion size an position map */
+    .Maps_Container {
+        flex-direction: column;
+    }
+
+    .Mapita {
+        width: inherit;
+    }
+
+    .Mapita_text i {
+        font-size: 1.5rem;
+    }
+
+    .SUBPAGE_UsContainer {
+        grid-area: US2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    /* US subpage styles */
+    .SUBPAGE_UsContainer {
+        flex-direction: column;
+    }
+}
+
+/* smartphones*/
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+
+    /* TEXT TITLES STYLES */
+    h2 {
+        font-size: 1rem;
+    }
+
+    /* SUBTITLES STYLE TEXT OF WEBPAGE */
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    /* PARAGRAPHS STYLE  */
+    p {
+        font-size: 0.8rem;
+    }
+
+    /* Other titles styles */
+    h4 {
+        font-size: 0.5rem;
+    }
+
+    /* Header list styles */
+    a {
+        font-size: 0.8rem;
+    }
+
+    /* HEADER */
+    header {
+        grid-area: header;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "barra barra";
+        background-image: linear-gradient(to bottom,
+                rgba(151, 92, 44, 0.813) 30%,
+                rgb(233, 172, 87),
+                rgba(211, 151, 67, 0.7));
+        position: relative;
+        background-size: cover;
+    }
+
+    /* Logo */
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .logo h2 {
+        color: aliceblue;
+        font-family: "Cedarville Cursive", cursive;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    /* Header align */
+    nav {
+        grid-area: barra;
+        justify-self: right;
+        align-self: center;
+        padding: 2%;
+    }
+
+    nav i {
+        justify-self: center;
+        align-self: stretch;
+        letter-spacing: 10px;
+        text-align: center;
+        padding-left: 2%;
+        font-size: 0.5rem;
+    }
+
+    /* MAIN */
+    .MAIN {
+        height: 350px;
+    }
+
+    /* Text1 of mainmenu */
+    .call h2 {
+        font-size: 1rem;
+    }
+
+    /* Text2 of the main menu */
+    .call2 h2 {
+        font-size: 0.8rem;
+    }
+
+    /* Containerpromo */
+    .PromoContainer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* Video promo video of coffee in one page */
+    .VideoPromo {
+        width: inherit;
+        height: auto;
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .TextoPromo {
+        padding: 2%;
+        text-align: center;
+    }
+
+    /* MENU */
+    .MenuContainer {
+        height: 350px;
+    }
+
+    /* UBICACION */
+    .UbicacionContainer {
+        height: 350px;
+    }
+
+    .VideoNosotros {
+        height: inherit;
+        width: auto;
+    }
+
+    /* Icon Nosotros size */
+    .TextoNosotros i {
+        font-size: 1rem;
+    }
+
+    /* Subpages */
+    .SUBPAGE_PromoContainer {
+        height: 350px;
+    }
+
+    .SUBPAGE_MenuContainer {
+        height: 350px;
+    }
+
+    /* Gallery size images */
+    .Foto1 {
+        width: 300px;
+    }
+
+    .Foto2 {
+        width: 300px;
+    }
+
+    .Foto3 {
+        width: 300px;
+    }
+
+    .Foto4 {
+        width: 300px;
+    }
+
+    .Foto5 {
+        width: 300px;
+    }
+
+    .Foto6 {
+        width: 300px;
+    }
+
+    .Foto7 {
+        width: 300px;
+    }
+
+    .Foto8 {
+        width: 300px;
+    }
+
+    /* Ubicacion size an position map */
+    .Maps_Container {
+        flex-direction: column;
+    }
+
+    .Mapita {
+        width: inherit;
+    }
+
+    .Mapita_text i {
+        font-size: 1.5rem;
+    }
+
+    /* US subpage styles */
+    .SUBPAGE_UsContainer {
+        flex-direction: column;
+    }
+}
