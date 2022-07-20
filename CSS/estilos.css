@@ -185,8 +185,8 @@ nav ul li {
         url(../Imagenes/Libreria.jpg);
     width: 100%;
     height: 600px;
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    background-size:cover;
 }
 
 /* Text1 of mainmenu */
