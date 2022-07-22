@@ -1,0 +1,206 @@
+/* Universal reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* body background color */
+body{
+    background-color: #333;
+}
+/* Navigation bar color and style*/
+.navbar{
+    background-image: linear-gradient(to bottom,
+    rgba(151, 92, 44, 0.813) 30%,
+    rgb(233, 172, 87),
+    rgba(211, 151, 67, 0.7));
+}
+/* Text logo styles */
+/* Logo */
+.logo h1 {
+    font-family: "Cedarville Cursive", cursive;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.logo span {
+    color: black;
+    text-shadow: 1px 1px #333;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+/* TEXT colors */
+i {
+    color:#f2fedc;
+}
+h1{
+    color: #f2fedc;
+    text-shadow: 0 0 5px #333;
+}
+h2{
+    text-align: center;
+    background-color:#00755d;
+    color: #f2fedc;
+    text-shadow: 0 0 5px #333;
+    margin-bottom: 0;
+}
+h3{
+    color: #c8ae53;
+    font-size: 3rem;
+    text-shadow: 0 0 5px #333;  
+}
+h4{
+    color: #c8ae53;
+    font-size: 2rem;
+    text-shadow: 0 0 3px #333;  
+}
+p{
+    font-family: "Cedarville Cursive", cursive;
+    font-style: italic;
+    font-size: 2rem;
+}
+/* Carrusell style */
+.carousel-control-prev{
+    background-color: transparent;
+    border: 0;
+    color: #c8ae53;
+}
+.carousel-control-next{
+    background-color: transparent;
+    border: 0;
+    color: #c8ae53;
+}
+/* Container styles color */
+.row{
+    background-color:#333;
+}
+/* jombotron style */
+.jumbotron{
+    background-image: linear-gradient(to right bottom, #945e21, #a9742c, #bd8b37, #d1a244, #e4bb51, #ebc763, #f1d474, #f8e086, #f5e29e, #f1e3b5, #ece5cc, #e7e6e3);
+    margin-top: 2rem;
+}
+.jumbotron a{
+    text-decoration: none;
+    color: #333;
+}
+a p{
+    /* text-align: right; */
+    margin-top: 1rem;
+    font-size: 2rem;
+    transition: all 0.7s;
+}
+a p:hover{
+    transform: scale(1.05);
+    color: #00755d;
+    transition: all 0.8s;
+}
+/* MEnu styles */
+.menu{
+    background-image: url(../Imagenes/Menu.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.menu a{
+    text-decoration: none;
+    color: #333;
+}
+/* ubicacion styles */
+.ubicacion{
+    background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.ubicacion h1{
+    color:#e7e6e3;
+}
+.ubicacion a{
+    text-decoration: none;
+    color:#333;
+}
+/* Jumbotron nosotros */
+.jumbotron_us{
+    background-image: linear-gradient(to bottom, #00755d, #008263, #009068, #009d6b, #00ab6e, #00b072, #00b477, #00b97b, #00b682, #09b388, #17b08d, #24ad91);
+    margin-top: 1rem;
+}
+.jumbotron_us h4{
+    color:#1b1b1b;
+}
+.jumbotron_us a{
+    text-decoration: none;
+    color: #333;
+}
+/* footer style */
+footer{
+    background-color: #008263;
+    text-align: center;
+}
+
+footer p{
+color:#e7e6e3;
+font-size: 1rem;
+}
+footer i{
+    font-size: 1.5rem;
+    letter-spacing: 20px;
+    transition: all 0.7s;
+}
+footer i:hover{
+    color:springgreen;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition:all 0.7s;
+}
+::selection{
+    background-color:#a9742c;
+    color: #fff;
+}
+/* BOTTON HOME STYLE */
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: #c8ae53;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 5px solid rgba(211, 151, 67, 0.707);
+    border-radius: 50%;
+    box-shadow: 0 0 5px #f2fedc;
+    transition: all 0.8s;
+}
+
+.subir i:hover {
+    transform: scale(1.2);
+    transform: translateY(-10px);
+    transition: all 0.8s;
+    color:#00755d;
+}
+
+
+
+/* Scroll personalizado */
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rbga(0,0,0,0.3);
+    border-radius:10px;
+    background-color: #1c1c1c;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    background-color:#c8ae53;
+}

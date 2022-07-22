@@ -2,102 +2,207 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Library type of fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
     <!-- Icon of webpage -->
-    <link rel="shortcut icon" href="./Imagenes/logo.ico">
+    <link rel="shortcut icon" href="./Imagenes/logo.ico" />
     <!-- Library of the page awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- library Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous" />
     <!-- Reference of CSS file -->
-    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <!-- Library of animation and transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>La Biblioteca</title>
 </head>
 <!-- ONE PAGE WEB  -->
 
-<body class="ContenedorOnePage">
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h2>La<span>Biblioteca</span></h2>
-        </div>
-        <nav>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <ul type="circle">
-                <li><a href id="#">Inicio</a></li>
-                <li><a href="#PROMOS">Promociones</a></li>
-                <li><a href="#MENU">Menú</a></li>
-                <li><a href="#UBICACION">Ubicación</a></li>
-                <li><a href="#NOSOTROS">Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- HOME # AREA -->
-    <main class="MAIN">
-        <div data-aos="fade-up" class="call"> <strong>
-                <h2>Café y libros
-            </strong></h2>
-        </div>
-        <div data-aos="fade-down" class="call2">
-            <h2>La mejor compañía Internet que si funciona</h2>
-        </div>
-    </main>
-    <!-- PROMO AREA -->
-    <h2 id="PROMOS">Promociones</h2>
-    <section class="PromoContainer">
-        <video data-aos="fade-right" class="VideoPromo" src="./Video/Promociones.mp4" loop autoplay muted>Tu navegador
-            no soporta HTML5 video</video>
-        <div data-aos="fade-left" class="TextoPromo"><a href="./HTML/Promociones.html" target="_blank">
-                <h3>Ver Promociones</h3>
-            </a></div>
-    </section>
-    <!-- MENU AREA -->
-    <h2 id="MENU">Menú</h2>
-    <section class="MenuContainer">
-        <div data-aos="fade-down" class="TextoMenu"><a href="./HTML/Menu.html" target="_blank">
-                <h3>Visita Nuestro Menú<br>Aquí</h3>
-            </a></div>
-    </section>
-    <!-- LOCATION AREA -->
-    <h2 id="UBICACION">Ubicación</h2>
-    <section class="UbicacionContainer">
-        <div data-aos="fade-down" class="TextoUbicacion"><a href="./HTML/Conocenos.html" target="_blank">
-                <h3>Ubica<br> Nuestras Sucursales Aquí</h3>
-            </a></div>
-    </section>
-
-    <!-- ABOUT US AREA -->
-    <h2 id="NOSOTROS">Nosotros</h2>
-    <section class="NosotrosContainer">
-        <video data-aos="fade-right" class="VideoNosotros" src="./Video/Keyboard - 1046.mp4" loop autoplay muted>Tu
-            navegador no soporta HTML5 video</video>
-        <div data-aos="fade-left" class="TextoNosotros">
-            <h4><i class="fa-solid fa-calendar"></i>La biblioteca nace en 2021</h4><br>
-            <h4><i class="fa-solid fa-book-open"></i>Totalmente nuevo</h4><br><a href="./HTML/Nosotros.html"
-                target="_blank">
-                <p><i class="fa-solid fa-arrow-right"></i>Ver más aquí</p>
+<body>
+    <!-- Full responsive header start -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo h2" href="#">
+                <h1>La<span>Biblioteca</span></h1>
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PROMOS">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MENU">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#UBICACION">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#NOSOTROS">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Personal</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Full responsive header end -->
+
+    <!-- HOME start -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="2"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Imagenes/Libreria1.jpg" alt="La Libreria1" class="d-block w-100 img-fluid" />
+                <div class="carousel-caption">
+                    <h3>La biblioteca</h3>
+                    <p>Café y libros</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Imagenes/Internet.jpg" alt="cafe e internet" class="d-block w-100" />
+                <div class="carousel-caption">
+                    <h3>Internet que si funciona</h3>
+                    <p>La maxima velocidad para trabajar o disfrutar</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Imagenes/Cafe.jpg" alt="granos de cafe" class="d-block w-100" />
+                <div class="carousel-caption">
+                    <h3>Café de veracruz</h3>
+                    <p>Café aromático con notas suaves y encantador sabor</p>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- HOME end -->
+
+    <!-- Promociones start -->
+    <h2 id="PROMOS">Promociones</h2>
+    <section class="container-fluid">
+        <div class="row">
+            <video data-aos="fade-right" class="col-sm-12 col-md-6" src="./Video/Promociones.mp4" loop autoplay muted>
+                Tu navegador no soporta HTML5 video
+            </video>
+            <div data-aos="fade-left" class="jumbotron text-right col-sm-12 col-md-4 t-4 text-white rounded">
+                <h1>Promociones del mes</h1>
+                <a href="./HTML/Promociones.html" target="_blank">
+                    <p>Conocelas aquí</p>
+                </a>
+            </div>
         </div>
     </section>
+    <!-- Promociones end -->
 
+    <!-- Menu start -->
+    <h2 id="MENU">Menú</h2>
+    <section class="container-fluid">
+        <div class="row">
+            <div data-aos="fade-right" class="menu text-right p-5 bg-primary text-white rounded">
+                <h1>
+                    Conoce<br />
+                    nuestro menú
+                </h1>
+                <a href="./HTML/Menu.html" target="_blank">
+                    <p>Dando click aquí</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Menu end -->
+
+    <!-- Ubicación start -->
+    <h2 id="UBICACION">Ubicación</h2>
+    <section class="container-fluid">
+        <div class="row">
+            <div data-aos="fade-up" class="ubicacion text-left p-5 bg-primary text-white rounded">
+                <h1>
+                    Conoce<br />
+                    nuestra cafetería
+                </h1>
+                <a href="./HTML/Conocenos.html" target="_blank">
+                    <p>Dando click aquí</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Ubicación end -->
+
+    <!-- Nosotros start -->
+    <h2 id="NOSOTROS">Nosotros</h2>
+    <section class="container-fluid">
+        <div class="row">
+            <video data-aos="fade-right" class="col-sm-12 col-md-6" src="./Video/Keyboard - 1046.mp4" loop autoplay
+                muted>
+                Tu navegador no soporta HTML5 video
+            </video>
+            <div data-aos="fade-left" class="jumbotron_us text-center col-sm-12 col-md-4 t-4 text-white rounded">
+                <h1>Nuestra historia</h1>
+                <br />
+                <h4>
+                    <i class="fa-solid fa-calendar"></i>La biblioteca nace en 2021
+                </h4>
+                <br />
+                <h4><i class="fa-solid fa-book-open"></i>Totalmente nuevo</h4>
+                <br /><a href="./HTML/Nosotros.html" target="_blank">
+                    <p><i class="fa-solid fa-arrow-right"></i>Ver más aquí</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Nosotros end -->
+
+    <!-- Footer start -->
     <footer>
         <p>&copy; LaBiblioteca 2022</p>
+        <p>Desarrollo por DarkMaster1814</p>
         <div class="redes">
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
-            <a mailto="dani_gt_10@hotmail.com"><i class="fa-solid fa-at"></i></a>
         </div>
     </footer>
+    <!-- Footer end -->
+
     <!-- BUTTON COFFE -->
     <a href="#" class="subir">
         <i class="fa-solid fa-coffee"></i>
@@ -107,8 +212,10 @@
     <script>
         AOS.init();
     </script>
-
+    <!-- LINK JS for BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
-<!-- Proyecto subido a Github Le edite algo en github  -->
 
 </html>

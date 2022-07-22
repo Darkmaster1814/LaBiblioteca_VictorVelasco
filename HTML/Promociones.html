@@ -2,67 +2,144 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Library type of fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
     <!-- Icon of webpage -->
-    <link rel="shortcut icon" href="../Imagenes/logo.ico">
+    <link rel="shortcut icon" href="../Imagenes/logo.ico" />
     <!-- Library of the page awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- library Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous" />
     <!-- Reference of CSS file -->
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/styles.css" />
     <!-- Library of animation and transitions -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Promociones</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>La Biblioteca</title>
 </head>
+<!-- ONE PAGE WEB  -->
 
-<body class="SUBPAGE_Promo_Container">
-    <header>
-        <div class="logo">
-            <h2>La<span>Biblioteca</span></h2>
+<body>
+    <!-- Full responsive header start -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo h2" href="#">
+                <h1>La<span>Biblioteca</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Conocenos.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Personal</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Iniciar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+            </div>
         </div>
-        <nav>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
+    </nav>
+    <!-- Full responsive header end -->
+
+    <!-- HOME start -->
+    <h2 id="#">Nuestras promociones de la semana</h2>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#HOME" data-bs-slide-to="2"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Imagenes/Promociones1.jpg" alt="Cafe capuchino" class="d-block w-100 img-fluid" />
+                <div class="carousel-caption">
+                    <h3>Martes</h3>
+                    <p>Capuchino 2x1</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Imagenes/Promociones2.jpg" alt="cafe y pan" class="d-block w-100" />
+                <div class="carousel-caption">
+                    <h3>Miercoles</h3>
+                    <p>Café americano con pan $2.00</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Imagenes/Promociones3.jpg" alt="granos de cafe" class="d-block w-100" />
+                <div class="carousel-caption">
+                    <h3>Jueves</h3>
+                    <p>Granos de café con chocolate $2.00</p>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- HOME end -->
+    <!-- Footer start -->
+    <footer>
+        <p>&copy; LaBiblioteca 2022</p>
+        <p>Desarrollo por DarkMaster1814</p>
+        <div class="redes">
+            <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
-            <ul type="circle">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Promociones</a></li>
-                <li><a href="./Menu.html">Menú</a></li>
-                <li><a href="./Conocenos.html" target="_blank">Ubicación</a></li>
-                <li><a href="./Nosotros.html" target="_blank">Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Subpage promociones -->
-    <h2 id="SUBPAGE_PROMOCIONES">Promociones</h2>
-    <section class="SUBPAGE_PromoContainer">
-        <div data-aos="fade-up" class="SUBPAGE_Promo_Text">
-            <h3>Promociones de Agosto</h3>
+            <i class="fa-brands fa-instagram"></i>
         </div>
-    </section>
+    </footer>
+    <!-- Footer end -->
+
     <!-- BUTTON COFFE -->
     <a href="#" class="subir">
         <i class="fa-solid fa-coffee"></i>
     </a>
-    <footer>
-        <p>&copy; LaBiblioteca 2022</p>
-        <div class="redes">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <a mailto="dani_gt_10@hotmail.com"><i class="fa-solid fa-at"></i></a>
-        </div>
-    </footer>
     <!-- DEFINITION OF SCRIPT ANIMATION AND TRANSITION -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- LINK JS for BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
 

@@ -2,88 +2,213 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Library type of fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet" />
   <!-- Icon of webpage -->
-  <link rel="shortcut icon" href="../Imagenes/logo.ico">
+  <link rel="shortcut icon" href="../Imagenes/logo.ico" />
   <!-- Library of the page awesome icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- library Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+    integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous" />
   <!-- Reference of CSS file -->
-  <link rel="stylesheet" href="../CSS/estilos.css">
+  <link rel="stylesheet" href="../CSS/styles.css" />
   <!-- Library of animation and transitions -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>Ubicaciones</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>La Biblioteca</title>
 </head>
+<!-- ONE PAGE WEB  -->
 
-<body class="SUBPAGE_Ubicacion_Container">
-  <header>
-    <div class="logo">
-      <h2>La<span>Biblioteca</span></h2>
+<body>
+  <!-- Full responsive header start -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo h2" href="#">
+        <h1>La<span>Biblioteca</span></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Promociones.html">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Menu.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Personal</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Iniciar sesión</a>
+            </div>
+          </li>
+        </ul>
+        <!-- 
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
     </div>
-    <nav>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
+  </nav>
+  <!-- Full responsive header end -->
+
+  <!-- HOME start -->
+  <h2 id="#">Conoce todas nuestras sucursales</h2>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#HOME" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#HOME" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#HOME" data-bs-slide-to="2"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Imagenes/Ubicaciones1.jpg" alt="Cafe capuchino" class="d-block w-100 img-fluid" />
+        <div class="carousel-caption">
+          <h3>Sucursal mariano escobedo</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Imagenes/Ubicaciones2.jpg" alt="cafe y pan" class="d-block w-100" />
+        <div class="carousel-caption">
+          <h3>Sucursal arbide</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../Imagenes/Ubicaciones3.jpg" alt="granos de cafe" class="d-block w-100" />
+        <div class="carousel-caption">
+          <h3>Sucursal plaza mayor</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- HOME end -->
+
+  <!-- Ubicacion2 start -->
+  <h2>Ubica nuestras sucursales</h2>
+  <section class="container-fluid">
+    <div class="row mx-auto">
+      <div class="col-md-4 col-sm-12">
+        <!-- Sucursal1 -->
+        <div class="card" style="width: 400px">
+          <iframe class="card-img-top"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14886.489334156428!2d-101.69544415!3d21.12761785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x977401b5ec96de0d!2sAmarello%20Arbide!5e0!3m2!1sen!2smx!4v1658465419690!5m2!1sen!2smx"
+            width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!--           <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+          <div class="card-body">
+            <h4 class="card-title">Sucursal arbide</h4>
+            <!--             <p class="card-text">Some example text.</p> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Sucursal Arbide"
+              data-bs-content="Calle algecidas 1503, colonia arbide CP:37253">
+              Ver dirección
+            </button>
+          </div>
+        </div>
+      </div>
+          <!-- Sucursal2 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 400px">
+          <iframe class="card-img-top"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.104191300992!2d-101.6680489858411!3d21.108411890431917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbff2064c8a75%3A0x8bad63ef931ade61!2zR2F0b3DDrWEgQ2Fmw6k!5e0!3m2!1sen!2smx!4v1658465987932!5m2!1sen!2smx"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!--           <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+          <div class="card-body">
+            <h4 class="card-title">Sucursal mariano</h4>
+            <!--             <p class="card-text">Some example text.</p> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Sucursal mariano escobedo"
+              data-bs-content="Calle mariano escobedo, colonia leon moderno Cp:32145">
+              Ver dirección
+            </button>
+          </div>
+        </div>
+      </div>
+        <!-- Sucursal3 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="card" style="width: 400px">
+          <iframe class="card-img-top"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.04196961222!2d-101.70010058584032!3d21.15072798898089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf5a8230734b%3A0xfebfeebb67913de6!2sBroga%20BAR%20%26%20COFFEE%20DISPENSING!5e0!3m2!1sen!2smx!4v1658466260320!5m2!1sen!2smx"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!--           <img class="card-img-top" src="img_avatar1.png" alt="Card image"> -->
+          <div class="card-body">
+            <h4 class="card-title">Sucursal plaza</h4>
+            <!--             <p class="card-text">Some example text.</p> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Sucursal plaza mayor"
+              data-bs-content="Av panorama, panorama CP:37270">
+              Ver dirección
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Ubicacion2 end -->
+  <!-- Footer start -->
+  <footer>
+    <p>&copy; LaBiblioteca 2022</p>
+    <p>Desarrollo por DarkMaster1814</p>
+    <div class="redes">
+      <i class="fa-brands fa-facebook"></i>
       <i class="fa-brands fa-twitter"></i>
-      <ul type="circle">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./Promociones.html" target="_blank">Promociones</a></li>
-        <li><a href="./Menu.html" target="_blank">Menú</a></li>
-        <li><a href="#">Ubicación</a></li>
-        <li><a href="./Nosotros.html" target="_blank">Nosotros</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <h2 id="SUBPAGE_UBICACION">Nuestras Instalaciones</h2>
-  <section class="SUBPAGE_UBICACIÓN_GALERIA">
-    <img class="Item Foto1" src="../Imagenes/Capuchino.jpg" alt="cafe">
-    <img class="Item Foto2" src="../Imagenes/Pan.jpg" alt="cafe">
-    <img class="Item Foto3" src="../Imagenes/coffe-g26b5016c0_1920.jpg" alt="cafe">
-    <img class="Item Foto4" src="../Imagenes/coffee-break-gaf5c6c105_1920.jpg" alt="cafe">
-    <img class="Item Foto5" src="../Imagenes/coffee-g787ac7887_1920.jpg" alt="cafe">
-    <img class="Item Foto6" src="../Imagenes/coffe-ga5c6fe28f_1920.jpg" alt="cafe">
-    <img class="Item Foto7" src="../Imagenes/food-g01e63253b_1920.jpg" alt="cafe">
-    <img class="Item Foto8" src="../Imagenes/promociones.jpg" alt="cafe">
-  </section>
-
-  <h2 id="MAPA">Ubica tu sucursal</h2>
-  <section class="Maps_Container">
-    <div data-aos="fade-left" class="Mapita">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7443.255222675333!2d-101.70224623275655!3d21.127407576953356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf3e2ad35af9%3A0x949006c873edfab2!2sCoffibry%20Caf%C3%A9!5e0!3m2!1sen!2smx!4v1656556143087!5m2!1sen!2smx"
-        style="border: 0" width="100%" height="300px" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+      <i class="fa-brands fa-instagram"></i>
     </div>
-    <div data-aos="fade-right" class="Mapita_text">
-      <h3>Reserva tu mesa<i class="fa-solid fa-house"></i></h3>
-    </div>
-  </section>
+  </footer>
+  <!-- Footer end -->
+
   <!-- BUTTON COFFE -->
   <a href="#" class="subir">
     <i class="fa-solid fa-coffee"></i>
   </a>
-  <footer>
-    <p>&copy; LaBiblioteca 2022</p>
-    <div class="redes">
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <a mailto="dani_gt_10@hotmail.com"><i class="fa-solid fa-at"></i></a>
-    </div>
-  </footer>
   <!-- DEFINITION OF SCRIPT ANIMATION AND TRANSITION -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  </div>
+  <!-- LINK JS for BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <!-- Link JS for popover -->
+  <script>
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  </script>
 </body>
 
 </html>
