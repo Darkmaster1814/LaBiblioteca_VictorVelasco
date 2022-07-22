@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 /* body background color */
 body{
@@ -75,7 +75,7 @@ p{
 }
 /* Container styles color */
 .row{
-    background-color:#333;
+    background-color:#ece5cc;
 }
 /* jombotron style */
 .jumbotron{
@@ -135,6 +135,29 @@ a p:hover{
 .jumbotron_us a{
     text-decoration: none;
     color: #333;
+}
+/* Us style  text colors */
+.card-title{
+    color: #1b1b1b !important;
+}
+.card-text{
+    font-family: "Cedarville Cursive", cursive;
+    font-style: italic;
+    color: #1b1b1b!important;
+    text-shadow: 0 0 5px #a9742c;
+    font-size: 2rem;
+}
+h4 i{
+    color:#1b1b1b;
+    text-shadow: 0 0 5px #333;
+    transition: all 0.7s;
+    letter-spacing: 4px;
+}
+/* animation */
+a i:hover{
+    color:#00755d;
+    transform: translateY(15px);
+    transition: all 0.7s;
 }
 /* footer style */
 footer{
