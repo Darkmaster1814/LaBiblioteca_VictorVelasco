@@ -227,3 +227,21 @@ footer i:hover{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
     background-color:#c8ae53;
 }
+
+/* MEDIA QWERY FOR small screens */
+@media only screen and (min-width: 471px) and (max-width: 750px) {
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }}
+/* MEDIA QWERY FOR SMARTPHONES */
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
