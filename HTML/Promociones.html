@@ -76,17 +76,17 @@
     <!-- HOME start -->
     <h2 id="#">Nuestras promociones de la semana</h2>
     <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="HOMEPROMO" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#HOME" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#HOME" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#HOME" data-bs-slide-to="2"></button>
-        </div>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#HOMEPROMO" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li data-bs-target="#HOMEPROMO" data-bs-slide-to="1" aria-label="Slide 2"></li>
+            <li data-bs-target="#HOMEPROMO" data-bs-slide-to="2" aria-label="Slide 3"></li>
+        </ol>
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../Imagenes/Promociones1.jpg" alt="Cafe capuchino" class="d-block w-100 img-fluid" />
+                <img src="../Imagenes/Promociones1.jpg" alt="Cafe capuchino" class="d-block w-100" />
                 <div class="carousel-caption">
                     <h3>Martes</h3>
                     <p>Capuchino 2x1</p>
@@ -106,14 +106,15 @@
                     <p>Granos de café con chocolate $2.00</p>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#HOMEPROMO" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#HOMEPROMO" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
         </div>
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
     </div>
     <!-- HOME end -->
     <!-- Footer start -->
