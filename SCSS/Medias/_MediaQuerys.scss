@@ -1,6 +1,4 @@
-@import"_variables";
-@import"../reset/_reset";
-
+@import"../Variables/_variables";
 /* MEDIA QWERY FOR small screens */
 @media only screen and (min-width: 471px) and (max-width: 900px) {
     h1{
@@ -14,6 +12,9 @@
     }}
 /* MEDIA QWERY FOR SMARTPHONES */
 @media only screen and (min-width: 0px) and (max-width: 470px) {
+    h1{
+        font-size:$Text_Small;
+        }
     h3{
     font-size: $Text_Small;
     }

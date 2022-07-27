@@ -1,5 +1,4 @@
-@import"../reset/_reset";
-@import"../utilities/_variables";
+@import"../Variables/_variables";
 /* SUBMENUSTYLES */
 /* Menu styles */
 .submenu{
@@ -11,6 +10,6 @@
 }
 .submenu a{
     text-decoration: none;
-    color: $Color_Background;
+    color:$Color_Background;
     text-shadow: 0 0 $Shadow $Color_Body;
 }

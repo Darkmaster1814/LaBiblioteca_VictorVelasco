@@ -1,0 +1,237 @@
+/* Import styles from other subwebpages */
+@import"./Variables/_variables";
+@import"./Set/_settings";
+@import"./Medias/_MediaQuerys";
+@import"./SubWebPagesStyles/_Menu";
+@import"./SubWebPagesStyles/_Conocenos";
+
+/* body background color */
+body {
+    background-color: $Color_Body;
+}
+
+/* TEXT colors */
+i {
+    color: $Color_Background;
+}
+
+/* font awesome styles */
+a {
+    color: $Color_Background;
+
+    & p {
+        /* text-align: right; */
+        font-size: $Text_Big;
+        transition: all $Time;
+    }
+
+    & p:hover {
+        transform: scale($Scale);
+        color: $Color_Banner;
+        transition: all $Time;
+    }
+}
+
+h1 {
+    color: $Color_Background;
+    text-shadow: 0 0 $Shadow $Color_Body;
+}
+
+h2 {
+    text-align: center;
+    background-color: $Color_Banner;
+    color: $Color_Background;
+    text-shadow: 0 0 $Shadow $Color_Body;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: $Color_Subtitles;
+    font-size: $Text_SuperBig;
+    text-shadow: 0 0 $Shadow $Color_Body;
+}
+
+h4 {
+    color: $Color_Subtitles;
+    font-size: $Text_Big;
+    text-shadow: 0 0 $Shadow $Color_Body;
+
+    & i {
+        color: $Color_Background;
+        text-shadow: 0 0 $Shadow $Color_Body;
+        transition: all $Time;
+        letter-spacing: 4px;
+        color: $Color_Text;
+    }
+
+    /* animation of icons */
+    & a {
+        i:hover {
+            color: $Color_Banner;
+            transform: translateY($Translate);
+            transition: all $Time;
+        }
+    }
+}
+
+p {
+    font-family: "Cedarville Cursive", cursive;
+    font-style: italic;
+    font-size: $Text_Big;
+}
+
+/* Navigation bar color and style*/
+.navbar {
+    background-image: $Color_Header;
+}
+
+/* Text logo styles */
+/* Logo */
+.logo {
+    & h1 {
+        font-family: $Text_Cursive;
+        font-style: italic;
+        color: $Color_Background;
+    }
+
+    & span {
+        font-family: $Text_Kardomo;
+        text-shadow: 1px 1px $Color_Body;
+        color: $Color_Text;
+    }
+}
+
+/* Carrusell style */
+.carousel-control-prev {
+    background-color: transparent;
+    border: 0;
+}
+
+.carousel-control-next {
+    background-color: transparent;
+    border: 0;
+}
+
+/* Container styles color */
+.row {
+    background-color: $Color_Background;
+    gap: $gap_box;
+}
+
+/* jombotron style */
+.jumbotron {
+    background-image: $Color_Header;
+    margin-top: $Text_Big;
+
+    & a {
+        text-decoration: none;
+        color: $Color_Body;
+    }
+}
+
+/* Menu styles */
+.menu {
+    background-image: url(../Imagenes/Menu.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: $Height_Background;
+
+    & a {
+        text-decoration: none;
+        color: $Color_Background;
+        text-shadow: 0 0 $Shadow $Color_Body;
+    }
+}
+
+/* ubicacion styles */
+.ubicacion {
+    background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: $Height_Background;
+    color: $Color_Background;
+
+    & a {
+        text-decoration: none;
+        text-shadow: 0 0 $Shadow $Color_Body;
+    }
+}
+
+/* Jumbotron nosotros */
+.jumbotron_us {
+    background-image: $Color_Jumbotron;
+    margin-top: 30px;
+
+    & h4 {
+        color: $Color_Text;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $Color_Body;
+    }
+}
+
+/* Us style  text colors */
+.card-title {
+    color: $Color_Text !important;
+}
+
+.card-text {
+    font-family: $Text_Cursive;
+    font-style: italic;
+    color: $Color_Text !important;
+    text-shadow: 0 0 $Shadow $Color_Subtitles;
+    font-size: $Text_Big;
+}
+
+/* footer style */
+footer {
+    background-color: $Color_Banner;
+    text-align: center;
+
+    & p {
+        color: $Color_Background;
+        font-size: $Text_Small;
+    }
+
+    /* Icons social */
+    & i {
+        font-size: $Text_Medium;
+        letter-spacing: 20px;
+        transition: all $Time;
+    }
+
+    & i:hover {
+        color: springgreen;
+        cursor: pointer;
+        transform: translateY($Translate);
+        transition: all $Time;
+    }
+}
+
+/* BOTTON HOME STYLE */
+.subir {
+    background-color: $Color_Subtitles;
+    color: $Color_Background;
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid rgba(211, 151, 67, 0.707);
+    border-radius: 50%;
+    box-shadow: 0 0 $Shadow $Color_Body;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 40px;
+    right: 40px;
+    line-height: 30px;
+    transition: all $Time;
+
+    & i:hover {
+        transform: translateY($Translate);
+        transition: all $Time;
+        color: $Color_Banner;
+    }
+}
