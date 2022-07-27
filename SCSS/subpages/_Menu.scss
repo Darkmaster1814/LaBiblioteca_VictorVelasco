@@ -1,0 +1,16 @@
+@import"../reset/_reset";
+@import"../utilities/_variables";
+/* SUBMENUSTYLES */
+/* Menu styles */
+.submenu{
+    background-image: url(../../Imagenes/Menu1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:$Height_Background;
+}
+.submenu a{
+    text-decoration: none;
+    color: $Color_Background;
+    text-shadow: 0 0 $Shadow $Color_Body;
+}

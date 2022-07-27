@@ -1,0 +1,33 @@
+@import"../reset/_reset";
+/* VARIABLES */
+/* Text sizes */
+$Text_SuperBig:3rem;
+$Text_Big:2rem;
+$Text_Medium:1.5rem;
+$Text_Small:1rem;
+$Text_SuperSmall:0.8rem;
+/* Text type */
+/* Text cursive */
+$Text_Cursive:"Cedarville Cursive", cursive;
+$Text_Kardomo:"Kdam Thmor Pro", sans-serif;
+/* Colors */
+$Color_Header:linear-gradient(to bottom,
+rgba(151, 92, 44, 0.813) 30%,
+rgb(233, 172, 87),
+rgba(211, 151, 67, 0.7));
+$Color_Jumbotron: linear-gradient(to bottom, #00755d, #008263, #009068, #009d6b, #00ab6e, #00b072, #00b477, #00b97b, #00b682, #09b388, #17b08d, #24ad91);
+$Color_Background:#f2fedc;
+$Color_Body:#333;
+$Color_Banner:#00755d;
+$Color_Text:#1b1b1b;
+$Color_Subtitles:#c8ae53;
+/* Shadow */
+$Shadow:5px;
+/* Transition */
+$Time:0.8s;
+$Scale:1.05;
+$Translate:-15px;
+/* PAGE SIZES */
+$Height_Background:500px;
+/* Gaps */
+$gap_box:10%;

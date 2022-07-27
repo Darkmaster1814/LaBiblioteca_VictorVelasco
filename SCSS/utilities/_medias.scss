@@ -1,0 +1,23 @@
+@import"_variables";
+@import"../reset/_reset";
+
+/* MEDIA QWERY FOR small screens */
+@media only screen and (min-width: 471px) and (max-width: 900px) {
+    h1{
+    font-size:$Text_Big;
+    }
+    h3{
+    font-size: $Text_Big;
+    }
+    p{
+    font-size: $Text_Medium;
+    }}
+/* MEDIA QWERY FOR SMARTPHONES */
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+    h3{
+    font-size: $Text_Small;
+    }
+    p{
+    font-size: $Text_SuperSmall;
+    }
+}

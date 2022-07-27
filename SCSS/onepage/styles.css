@@ -1,0 +1,380 @@
+/* Import styles from other subwebpages */ /* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Colors */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Colors */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MEDIA QWERY FOR small screens */
+@media only screen and (min-width: 471px) and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+/* MEDIA QWERY FOR SMARTPHONES */
+@media only screen and (min-width: 0px) and (max-width: 470px) {
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Colors */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* SUBMENUSTYLES */
+/* Menu styles */
+.submenu {
+  background-image: url(../../Imagenes/Menu1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #f2fedc;
+  text-shadow: 0 0 5px #333;
+}
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Colors */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* Sub row of conocenos subwebpage */
+.subconocenos {
+  gap: 5%;
+  padding: 2%;
+}
+
+/* Scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Underlighning */
+::-moz-selection {
+  background-color: #a9742c;
+  color: #f2fedc;
+}
+::selection {
+  background-color: #a9742c;
+  color: #f2fedc;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rbga(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
+  background-color: #c8ae53;
+}
+
+/* TEXT colors */
+i {
+  color: #f2fedc;
+}
+
+/* font awesome styles */
+a {
+  color: #f2fedc;
+}
+a p {
+  /* text-align: right; */
+  font-size: 2rem;
+  transition: all 0.8s;
+}
+a p:hover {
+  transform: scale(1.05);
+  color: #00755d;
+  transition: all 0.8s;
+}
+
+h1 {
+  color: #f2fedc;
+  text-shadow: 0 0 5px #333;
+}
+
+h2 {
+  text-align: center;
+  background-color: #00755d;
+  color: #f2fedc;
+  text-shadow: 0 0 5px #333;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #c8ae53;
+  font-size: 3rem;
+  text-shadow: 0 0 5px #333;
+}
+
+h4 {
+  color: #c8ae53;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #333;
+  /* animation of icons */
+}
+h4 i {
+  color: #f2fedc;
+  text-shadow: 0 0 5px #333;
+  transition: all 0.8s;
+  letter-spacing: 4px;
+  color: #1b1b1b;
+}
+h4 a i:hover {
+  color: #00755d;
+  transform: translateY(-15px);
+  transition: all 0.8s;
+}
+
+p {
+  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+/* body background color */
+body {
+  background-color: #333;
+}
+
+/* Navigation bar color and style*/
+.navbar {
+  background-image: linear-gradient(to bottom, rgba(151, 92, 44, 0.813) 30%, rgb(233, 172, 87), rgba(211, 151, 67, 0.7));
+}
+
+/* Text logo styles */
+/* Logo */
+.logo h1 {
+  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  color: #f2fedc;
+}
+.logo span {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px #333;
+  color: #1b1b1b;
+}
+
+/* Carrusell style */
+.carousel-control-prev {
+  background-color: transparent;
+  border: 0;
+}
+
+.carousel-control-next {
+  background-color: transparent;
+  border: 0;
+}
+
+/* Container styles color */
+.row {
+  background-color: #f2fedc;
+  gap: 10%;
+}
+
+/* jombotron style */
+.jumbotron {
+  background-image: linear-gradient(to bottom, rgba(151, 92, 44, 0.813) 30%, rgb(233, 172, 87), rgba(211, 151, 67, 0.7));
+  margin-top: 2rem;
+}
+.jumbotron a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Menu styles */
+.menu {
+  background-image: url(../../Imagenes/Menu.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+.menu a {
+  text-decoration: none;
+  color: #f2fedc;
+  text-shadow: 0 0 5px #333;
+}
+
+/* ubicacion styles */
+.ubicacion {
+  background-image: url(../../Imagenes/map-gcf0629988_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  color: #f2fedc;
+}
+.ubicacion a {
+  text-decoration: none;
+  text-shadow: 0 0 5px #333;
+}
+
+/* Jumbotron nosotros */
+.jumbotron_us {
+  background-image: linear-gradient(to bottom, #00755d, #008263, #009068, #009d6b, #00ab6e, #00b072, #00b477, #00b97b, #00b682, #09b388, #17b08d, #24ad91);
+  margin-top: 30px;
+}
+.jumbotron_us h4 {
+  color: #1b1b1b;
+}
+.jumbotron_us a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Us style  text colors */
+.card-title {
+  color: #1b1b1b !important;
+}
+
+.card-text {
+  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  color: #1b1b1b !important;
+  text-shadow: 0 0 5px #c8ae53;
+  font-size: 2rem;
+}
+
+/* footer style */
+footer {
+  background-color: #00755d;
+  text-align: center;
+  /* Icons social */
+}
+footer p {
+  color: #f2fedc;
+  font-size: 1rem;
+}
+footer i {
+  font-size: 1.5rem;
+  letter-spacing: 20px;
+  transition: all 0.8s;
+}
+footer i:hover {
+  color: springgreen;
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all 0.8s;
+}
+
+/* BOTTON HOME STYLE */
+.subir {
+  background-color: #c8ae53;
+  color: #f2fedc;
+  font-size: 25px;
+  text-align: center;
+  border: 5px solid rgba(211, 151, 67, 0.707);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #333;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  bottom: 40px;
+  right: 40px;
+  line-height: 30px;
+  transition: all 0.8s;
+}
+.subir i:hover {
+  transform: translateY(-15px);
+  transition: all 0.8s;
+  color: #00755d;
+}/*# sourceMappingURL=styles.css.map */
