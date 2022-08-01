@@ -3,10 +3,7 @@
 /* Menu styles */
 .submenu{
     background-image: url(../../Imagenes/Menu1.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height:$Height_Background;
+    @include Backsizes($width,$height,$c-position,$b-sizes);
 }
 .submenu a{
     text-decoration: none;

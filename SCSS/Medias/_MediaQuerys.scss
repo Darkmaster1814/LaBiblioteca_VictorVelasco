@@ -1,6 +1,6 @@
 @import"../Variables/_variables";
 /* MEDIA QWERY FOR small screens */
-@media only screen and (min-width: 471px) and (max-width: 900px) {
+@media only screen and (min-width: 490px) and (max-width: 900px) {
     h1{
     font-size:$Text_Big;
     }
@@ -9,16 +9,23 @@
     }
     p{
     font-size: $Text_Medium;
-    }}
+    }
+    .card-text{
+        font-size: $Text_Medium;
+    }
+}
 /* MEDIA QWERY FOR SMARTPHONES */
-@media only screen and (min-width: 0px) and (max-width: 470px) {
+@media only screen and (min-width: 0px) and (max-width: 489px) {
     h1{
         font-size:$Text_Small;
         }
     h3{
-    font-size: $Text_Small;
+    font-size: $Text_SuperSmall;
     }
     p{
     font-size: $Text_SuperSmall;
+    }
+    .card-text{
+        font-size: $Text_Small;
     }
 }

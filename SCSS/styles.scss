@@ -11,13 +11,12 @@ body {
 }
 
 /* TEXT colors */
-i {
-    color: $Color_Background;
-}
 
 /* font awesome styles */
 a {
     color: $Color_Background;
+    text-decoration: none;
+    text-shadow: 0 0 $Shadow $Color_Body;
 
     & p {
         /* text-align: right; */
@@ -33,32 +32,30 @@ a {
 }
 
 h1 {
-    color: $Color_Background;
+    /* text normal type,fontstyle,color,size */
+    @include Text($Text_Kardomo,oblique,$Color_Background,$Text_SuperBig);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
 
 h2 {
-    text-align: center;
-    background-color: $Color_Banner;
-    color: $Color_Background;
-    text-shadow: 0 0 $Shadow $Color_Body;
+    @extend h1;
+    @extend footer;
     margin-bottom: 0;
 }
 
 h3 {
-    color: $Color_Subtitles;
-    font-size: $Text_SuperBig;
+     /* text normal type,fontstyle,color,size */
+    @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_SuperBig);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
 
 h4 {
-    color: $Color_Subtitles;
-    font-size: $Text_Big;
+    /* text normal type,fontstyle,color,size */
+    @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_Big);
     text-shadow: 0 0 $Shadow $Color_Body;
 
     & i {
-        color: $Color_Background;
-        text-shadow: 0 0 $Shadow $Color_Body;
+        @extend i;
         transition: all $Time;
         letter-spacing: 4px;
         color: $Color_Text;
@@ -75,9 +72,9 @@ h4 {
 }
 
 p {
-    font-family: "Cedarville Cursive", cursive;
-    font-style: italic;
-    font-size: $Text_Big;
+    /* text cursive type,fontstyle,color,size */
+    @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
+    text-shadow: 0 0 $Shadow $Color_Body;
 }
 
 /* Navigation bar color and style*/
@@ -89,15 +86,15 @@ p {
 /* Logo */
 .logo {
     & h1 {
-        font-family: $Text_Cursive;
-        font-style: italic;
-        color: $Color_Background;
+    /* text cursive type,fontstyle,color,size */
+    @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
+    text-shadow: 0 0 $Shadow $Color_Body;
     }
 
     & span {
-        font-family: $Text_Kardomo;
+    /* text normal type,fontstyle,color,size */
+    @include Text($Text_Kardomo,normal,$Color_Text,$Text_Big);
         text-shadow: 1px 1px $Color_Body;
-        color: $Color_Text;
     }
 }
 
@@ -108,8 +105,7 @@ p {
 }
 
 .carousel-control-next {
-    background-color: transparent;
-    border: 0;
+    @extend.carousel-control-prev;
 }
 
 /* Container styles color */
@@ -120,7 +116,7 @@ p {
 
 /* jombotron style */
 .jumbotron {
-    background-image: $Color_Header;
+    @extend .navbar;
     margin-top: $Text_Big;
 
     & a {
@@ -132,30 +128,20 @@ p {
 /* Menu styles */
 .menu {
     background-image: url(../Imagenes/Menu.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: $Height_Background;
+    @include Backsizes($width,$height,$c-position,$b-sizes);
 
     & a {
-        text-decoration: none;
-        color: $Color_Background;
-        text-shadow: 0 0 $Shadow $Color_Body;
+        @extend a;
     }
 }
 
 /* ubicacion styles */
 .ubicacion {
     background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: $Height_Background;
-    color: $Color_Background;
+    @include Backsizes($width,$height,$c-position,$b-sizes);
 
     & a {
-        text-decoration: none;
-        text-shadow: 0 0 $Shadow $Color_Body;
+        @extend a;
     }
 }
 
@@ -209,6 +195,15 @@ footer {
         cursor: pointer;
         transform: translateY($Translate);
         transition: all $Time;
+    }
+}
+/* map of colors of social icons */
+@each $icon,$iconcolor in $fa{
+    .fa-#{$icon}{
+        background-image: $iconcolor;
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;
+        
     }
 }
 

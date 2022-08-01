@@ -2,20 +2,28 @@
 /* Text sizes */
 /* Text type */
 /* Text cursive */
+/* Text normal */
 /* Colors */
+/* Map of colors for social icons */
 /* Shadow */
 /* Transition */
 /* PAGE SIZES */
 /* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
+/* Text normal */
 /* Colors */
+/* Map of colors for social icons */
 /* Shadow */
 /* Transition */
 /* PAGE SIZES */
 /* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
 /* Universal reset */
 * {
   margin: 0;
@@ -56,14 +64,18 @@ html {
 /* Text sizes */
 /* Text type */
 /* Text cursive */
+/* Text normal */
 /* Colors */
+/* Map of colors for social icons */
 /* Shadow */
 /* Transition */
 /* PAGE SIZES */
 /* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
 /* MEDIA QWERY FOR small screens */
-@media only screen and (min-width: 471px) and (max-width: 900px) {
-  h1 {
+@media only screen and (min-width: 490px) and (max-width: 900px) {
+  h1, h2 {
     font-size: 2rem;
   }
   h3 {
@@ -72,36 +84,46 @@ html {
   p {
     font-size: 1.5rem;
   }
+  .card-text {
+    font-size: 1.5rem;
+  }
 }
 /* MEDIA QWERY FOR SMARTPHONES */
-@media only screen and (min-width: 0px) and (max-width: 470px) {
-  h1 {
+@media only screen and (min-width: 0px) and (max-width: 489px) {
+  h1, h2 {
     font-size: 1rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+  }
+  .card-text {
+    font-size: 1rem;
   }
 }
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
+/* Text normal */
 /* Colors */
+/* Map of colors for social icons */
 /* Shadow */
 /* Transition */
 /* PAGE SIZES */
 /* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
 /* SUBMENUSTYLES */
 /* Menu styles */
 .submenu {
   background-image: url(../../Imagenes/Menu1.jpg);
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 500px;
+  background-position: center;
+  background-size: cover;
 }
 
 .submenu a {
@@ -122,15 +144,13 @@ body {
 }
 
 /* TEXT colors */
-i {
-  color: #f2fedc;
-}
-
 /* font awesome styles */
-a {
+a, .ubicacion a, .menu a {
   color: #f2fedc;
+  text-decoration: none;
+  text-shadow: 0 0 5px #333;
 }
-a p {
+a p, .ubicacion a p, .menu a p {
   /* text-align: right; */
   font-size: 2rem;
   transition: all 0.8s;
@@ -141,34 +161,38 @@ a p:hover {
   transition: all 0.8s;
 }
 
-h1 {
+h1, h2 {
+  /* text normal type,fontstyle,color,size */
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: oblique;
   color: #f2fedc;
+  font-size: 3rem;
   text-shadow: 0 0 5px #333;
 }
 
 h2 {
-  text-align: center;
-  background-color: #00755d;
-  color: #f2fedc;
-  text-shadow: 0 0 5px #333;
   margin-bottom: 0;
 }
 
 h3 {
+  /* text normal type,fontstyle,color,size */
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: oblique;
   color: #c8ae53;
   font-size: 3rem;
   text-shadow: 0 0 5px #333;
 }
 
 h4 {
+  /* text normal type,fontstyle,color,size */
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: oblique;
   color: #c8ae53;
   font-size: 2rem;
   text-shadow: 0 0 5px #333;
   /* animation of icons */
 }
 h4 i {
-  color: #f2fedc;
-  text-shadow: 0 0 5px #333;
   transition: all 0.8s;
   letter-spacing: 4px;
   color: #1b1b1b;
@@ -180,36 +204,40 @@ h4 a i:hover {
 }
 
 p {
+  /* text cursive type,fontstyle,color,size */
   font-family: "Cedarville Cursive", cursive;
   font-style: italic;
+  color: #f2fedc;
   font-size: 2rem;
+  text-shadow: 0 0 5px #333;
 }
 
 /* Navigation bar color and style*/
-.navbar {
+.navbar, .jumbotron {
   background-image: linear-gradient(to bottom, rgba(151, 92, 44, 0.813) 30%, rgb(233, 172, 87), rgba(211, 151, 67, 0.7));
 }
 
 /* Text logo styles */
 /* Logo */
-.logo h1 {
+.logo h1, .logo h2 {
+  /* text cursive type,fontstyle,color,size */
   font-family: "Cedarville Cursive", cursive;
   font-style: italic;
   color: #f2fedc;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #333;
 }
 .logo span {
+  /* text normal type,fontstyle,color,size */
   font-family: "Kdam Thmor Pro", sans-serif;
-  text-shadow: 1px 1px #333;
+  font-style: normal;
   color: #1b1b1b;
+  font-size: 2rem;
+  text-shadow: 1px 1px #333;
 }
 
 /* Carrusell style */
-.carousel-control-prev {
-  background-color: transparent;
-  border: 0;
-}
-
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
   background-color: transparent;
   border: 0;
 }
@@ -222,7 +250,6 @@ p {
 
 /* jombotron style */
 .jumbotron {
-  background-image: linear-gradient(to bottom, rgba(151, 92, 44, 0.813) 30%, rgb(233, 172, 87), rgba(211, 151, 67, 0.7));
   margin-top: 2rem;
 }
 .jumbotron a {
@@ -233,31 +260,19 @@ p {
 /* Menu styles */
 .menu {
   background-image: url(../Imagenes/Menu.jpg);
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 500px;
+  background-position: center;
+  background-size: cover;
 }
-.menu a {
-  text-decoration: none;
-  color: #f2fedc;
-  text-shadow: 0 0 5px #333;
-}
-
 /* ubicacion styles */
 .ubicacion {
   background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 500px;
-  color: #f2fedc;
+  background-position: center;
+  background-size: cover;
 }
-.ubicacion a {
-  text-decoration: none;
-  text-shadow: 0 0 5px #333;
-}
-
 /* Jumbotron nosotros */
 .jumbotron_us {
   background-image: linear-gradient(to bottom, #00755d, #008263, #009068, #009d6b, #00ab6e, #00b072, #00b477, #00b97b, #00b682, #09b388, #17b08d, #24ad91);
@@ -285,25 +300,44 @@ p {
 }
 
 /* footer style */
-footer {
+footer, h2 {
   background-color: #00755d;
   text-align: center;
   /* Icons social */
 }
-footer p {
+footer p, h2 p {
   color: #f2fedc;
   font-size: 1rem;
 }
-footer i {
+footer i, h2 i {
   font-size: 1.5rem;
   letter-spacing: 20px;
   transition: all 0.8s;
 }
-footer i:hover {
+footer i:hover, h2 i:hover {
   color: springgreen;
   cursor: pointer;
   transform: translateY(-15px);
   transition: all 0.8s;
+}
+
+/* map of colors of social icons */
+.fa-facebook {
+  background-image: linear-gradient(to right bottom, #0165e1, #0076ea, #0087f1, #0097f7, #00a6fb, #00abfd, #00b0fe, #00b5ff, #03b2ff, #08affe, #10acfe, #17a9fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter {
+  background-image: linear-gradient(to right bottom, #008abe, #0093ca, #009bd6, #00a4e2, #00adee, #05b2f4, #0ab7f9, #0fbcff, #18beff, #1fc0ff, #25c2ff, #2bc4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-instagram {
+  background-image: linear-gradient(to right bottom, #405de6, #9d47d2, #d125b2, #f1008a, #ff0060, #ff324b, #ff4f36, #ff681d, #ff8a2b, #fea842, #fec35f, #ffdc80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* BOTTON HOME STYLE */

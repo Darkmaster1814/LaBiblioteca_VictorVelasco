@@ -4,10 +4,11 @@ $Text_SuperBig:3rem;
 $Text_Big:2rem;
 $Text_Medium:1.5rem;
 $Text_Small:1rem;
-$Text_SuperSmall:0.8rem;
+$Text_SuperSmall:0.5rem;
 /* Text type */
 /* Text cursive */
 $Text_Cursive:"Cedarville Cursive", cursive;
+/* Text normal */
 $Text_Kardomo:"Kdam Thmor Pro", sans-serif;
 /* Colors */
 $Color_Header:linear-gradient(to bottom,
@@ -20,6 +21,12 @@ $Color_Body:#333;
 $Color_Banner:#00755d;
 $Color_Text:#1b1b1b;
 $Color_Subtitles:#c8ae53;
+/* Map of colors for social icons */
+$fa:(
+    facebook:linear-gradient(to right bottom, #0165e1, #0076ea, #0087f1, #0097f7, #00a6fb, #00abfd, #00b0fe, #00b5ff, #03b2ff, #08affe, #10acfe, #17a9fd),
+    twitter:linear-gradient(to right bottom, #008abe, #0093ca, #009bd6, #00a4e2, #00adee, #05b2f4, #0ab7f9, #0fbcff, #18beff, #1fc0ff, #25c2ff, #2bc4ff),
+    instagram:linear-gradient(to right bottom, #405de6, #9d47d2, #d125b2, #f1008a, #ff0060, #ff324b, #ff4f36, #ff681d, #ff8a2b, #fea842, #fec35f, #ffdc80)
+);
 /* Shadow */
 $Shadow:5px;
 /* Transition */
@@ -27,6 +34,23 @@ $Time:0.8s;
 $Scale:1.05;
 $Translate:-15px;
 /* PAGE SIZES */
-$Height_Background:500px;
+$width:100%;
+$height:500px;
+$b-sizes:cover;
+$c-position:center;
 /* Gaps */
 $gap_box:10%;
+/* Mixin of type of text */
+@mixin Text($fuente,$festilo,$fcolor,$fsize) {
+    font-family: $fuente;
+    font-style: $festilo;
+    color: $fcolor;
+    font-size: $fsize;
+}
+/* Mixin of background image */
+@mixin Backsizes($ancho,$alto,$posicion,$covertura) {
+    width: $ancho;
+    height: $alto;
+    background-position: $posicion;
+    background-size: $covertura;
+}
