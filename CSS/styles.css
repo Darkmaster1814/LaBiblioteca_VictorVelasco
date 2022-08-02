@@ -315,7 +315,6 @@ footer i, h2 i {
   transition: all 0.8s;
 }
 footer i:hover, h2 i:hover {
-  color: springgreen;
   cursor: pointer;
   transform: translateY(-15px);
   transition: all 0.8s;

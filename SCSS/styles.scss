@@ -4,63 +4,52 @@
 @import"./Medias/_MediaQuerys";
 @import"./SubWebPagesStyles/_Menu";
 @import"./SubWebPagesStyles/_Conocenos";
-
 /* body background color */
 body {
     background-color: $Color_Body;
 }
-
 /* TEXT colors */
-
 /* font awesome styles */
 a {
     color: $Color_Background;
     text-decoration: none;
     text-shadow: 0 0 $Shadow $Color_Body;
-
     & p {
         /* text-align: right; */
         font-size: $Text_Big;
         transition: all $Time;
     }
-
     & p:hover {
         transform: scale($Scale);
         color: $Color_Banner;
         transition: all $Time;
     }
 }
-
 h1 {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Background,$Text_SuperBig);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
-
 h2 {
     @extend h1;
     @extend footer;
     margin-bottom: 0;
 }
-
 h3 {
      /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_SuperBig);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
-
 h4 {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_Big);
     text-shadow: 0 0 $Shadow $Color_Body;
-
     & i {
         @extend i;
         transition: all $Time;
         letter-spacing: 4px;
         color: $Color_Text;
     }
-
     /* animation of icons */
     & a {
         i:hover {
@@ -70,18 +59,15 @@ h4 {
         }
     }
 }
-
 p {
     /* text cursive type,fontstyle,color,size */
     @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
-
 /* Navigation bar color and style*/
 .navbar {
     background-image: $Color_Header;
 }
-
 /* Text logo styles */
 /* Logo */
 .logo {
@@ -90,81 +76,66 @@ p {
     @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
     text-shadow: 0 0 $Shadow $Color_Body;
     }
-
     & span {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,normal,$Color_Text,$Text_Big);
         text-shadow: 1px 1px $Color_Body;
     }
 }
-
 /* Carrusell style */
 .carousel-control-prev {
     background-color: transparent;
     border: 0;
 }
-
 .carousel-control-next {
     @extend.carousel-control-prev;
 }
-
 /* Container styles color */
 .row {
     background-color: $Color_Background;
     gap: $gap_box;
 }
-
 /* jombotron style */
 .jumbotron {
     @extend .navbar;
     margin-top: $Text_Big;
-
     & a {
         text-decoration: none;
         color: $Color_Body;
     }
 }
-
 /* Menu styles */
 .menu {
     background-image: url(../Imagenes/Menu.jpg);
     @include Backsizes($width,$height,$c-position,$b-sizes);
-
     & a {
         @extend a;
     }
 }
-
 /* ubicacion styles */
 .ubicacion {
     background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
     @include Backsizes($width,$height,$c-position,$b-sizes);
-
     & a {
         @extend a;
     }
 }
-
 /* Jumbotron nosotros */
 .jumbotron_us {
     background-image: $Color_Jumbotron;
     margin-top: 30px;
-
     & h4 {
         color: $Color_Text;
     }
-
     & a {
         text-decoration: none;
         color: $Color_Body;
     }
 }
-
 /* Us style  text colors */
 .card-title {
     color: $Color_Text !important;
 }
-
 .card-text {
     font-family: $Text_Cursive;
     font-style: italic;
@@ -172,26 +143,21 @@ p {
     text-shadow: 0 0 $Shadow $Color_Subtitles;
     font-size: $Text_Big;
 }
-
 /* footer style */
 footer {
     background-color: $Color_Banner;
     text-align: center;
-
     & p {
         color: $Color_Background;
         font-size: $Text_Small;
     }
-
     /* Icons social */
     & i {
         font-size: $Text_Medium;
         letter-spacing: 20px;
         transition: all $Time;
     }
-
     & i:hover {
-        color: springgreen;
         cursor: pointer;
         transform: translateY($Translate);
         transition: all $Time;
@@ -206,7 +172,6 @@ footer {
         
     }
 }
-
 /* BOTTON HOME STYLE */
 .subir {
     background-color: $Color_Subtitles;
@@ -223,7 +188,6 @@ footer {
     right: 40px;
     line-height: 30px;
     transition: all $Time;
-
     & i:hover {
         transform: translateY($Translate);
         transition: all $Time;
