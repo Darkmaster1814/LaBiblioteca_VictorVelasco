@@ -138,6 +138,52 @@ html {
   padding: 2%;
 }
 
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Text normal */
+/* Colors */
+/* Map of colors for social icons */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
+/* Pasword styles */
+.pass {
+  padding: 5%;
+}
+
+/* VARIABLES */
+/* Text sizes */
+/* Text type */
+/* Text cursive */
+/* Text normal */
+/* Colors */
+/* Map of colors for social icons */
+/* Shadow */
+/* Transition */
+/* PAGE SIZES */
+/* Gaps */
+/* Mixin of type of text */
+/* Mixin of background image */
+/* Error of button 404 */
+.errorBackground {
+  background-image: url(../../Imagenes/error404.svg);
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+.error {
+  padding-top: 25%;
+  margin-left: 45%;
+}
+
 /* body background color */
 body {
   background-color: #333;
@@ -245,7 +291,7 @@ p {
 /* Container styles color */
 .row {
   background-color: #f2fedc;
-  gap: 10%;
+  gap: 1%;
 }
 
 /* jombotron style */
@@ -287,6 +333,10 @@ p {
 }
 
 /* Us style  text colors */
+.card {
+  margin-top: 2%;
+}
+
 .card-title {
   color: #1b1b1b !important;
 }

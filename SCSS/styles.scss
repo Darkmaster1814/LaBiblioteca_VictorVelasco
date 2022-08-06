@@ -4,6 +4,8 @@
 @import"./Medias/_MediaQuerys";
 @import"./SubWebPagesStyles/_Menu";
 @import"./SubWebPagesStyles/_Conocenos";
+@import"./SubWebPagesStyles/Password";
+@import"./SubWebPagesStyles/error";
 /* body background color */
 body {
     background-color: $Color_Body;
@@ -133,6 +135,9 @@ p {
     }
 }
 /* Us style  text colors */
+.card{
+    margin-top: $separacioncard;
+}
 .card-title {
     color: $Color_Text !important;
 }

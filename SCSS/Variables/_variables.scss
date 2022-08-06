@@ -39,7 +39,8 @@ $height:500px;
 $b-sizes:cover;
 $c-position:center;
 /* Gaps */
-$gap_box:10%;
+$gap_box:1%;
+$separacioncard:2%;
 /* Mixin of type of text */
 @mixin Text($fuente,$festilo,$fcolor,$fsize) {
     font-family: $fuente;

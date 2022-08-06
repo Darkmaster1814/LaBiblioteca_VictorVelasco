@@ -1,0 +1,12 @@
+@import"../Variables/_variables";
+/* Error of button 404 */
+
+.errorBackground{
+    background-image: url(../../Imagenes/error404.svg);
+    @include Backsizes($width,$height,$c-position,$b-sizes);
+    height:600px;
+}
+.error{
+    padding-top: 25%;
+    margin-left: 45%
+}
