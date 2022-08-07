@@ -93,11 +93,14 @@ html {
   h1, h2 {
     font-size: 1rem;
   }
+  h2 {
+    font-size: 1rem;
+  }
   h3 {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   p {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .card-text {
     font-size: 1rem;
@@ -291,7 +294,7 @@ p {
 /* Container styles color */
 .row {
   background-color: #f2fedc;
-  gap: 1%;
+  gap: 2%;
 }
 
 /* jombotron style */
@@ -334,7 +337,8 @@ p {
 
 /* Us style  text colors */
 .card {
-  margin-top: 2%;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 .card-title {

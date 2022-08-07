@@ -4,7 +4,7 @@ $Text_SuperBig:3rem;
 $Text_Big:2rem;
 $Text_Medium:1.5rem;
 $Text_Small:1rem;
-$Text_SuperSmall:0.5rem;
+$Text_SuperSmall:1rem;
 /* Text type */
 /* Text cursive */
 $Text_Cursive:"Cedarville Cursive", cursive;
@@ -39,8 +39,8 @@ $height:500px;
 $b-sizes:cover;
 $c-position:center;
 /* Gaps */
-$gap_box:1%;
-$separacioncard:2%;
+$gap_box:2%;
+$separacioncard:5%;
 /* Mixin of type of text */
 @mixin Text($fuente,$festilo,$fcolor,$fsize) {
     font-family: $fuente;

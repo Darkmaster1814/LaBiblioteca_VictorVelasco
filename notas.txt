@@ -1,1 +1,5 @@
 h1{color:map-get($mapa,key1)}
+
+sass
+npm install -g sass
+sass --watch SCSS/styles.scss CSS/styles.css
