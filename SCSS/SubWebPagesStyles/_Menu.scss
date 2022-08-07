@@ -2,7 +2,7 @@
 /* SUBMENUSTYLES */
 /* Menu styles */
 .submenu{
-    background-image: url(../../Imagenes/Menu1.jpg);
+    background-image: url(../Imagenes/Menu1.jpg);
     @include Backsizes($width,$height,$c-position,$b-sizes);
 }
 .submenu a{
