@@ -66,6 +66,16 @@ p {
     @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
     text-shadow: 0 0 $Shadow $Color_Body;
 }
+/* text effect of the videos */
+.captation{
+    position: absolute;
+    margin-top: 30%; 
+    margin-left: 5%;
+    p{
+        @include Text($Text_Cursive,italic,$Color_Subtitles,$Text_Big);
+        text-shadow: 0 0 $Shadow $Color_Body;
+    }
+}
 /* Navigation bar color and style*/
 .navbar {
     background-image: $Color_Header;

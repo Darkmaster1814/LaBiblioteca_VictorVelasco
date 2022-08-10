@@ -96,11 +96,25 @@ html {
   h2 {
     font-size: 1rem;
   }
+  /* text effect of the videos */
+  .captation {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 5%;
+  }
+  .captation p {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-style: oblique;
+    color: #c8ae53;
+    font-size: 5px;
+    text-shadow: 0 0 5px #333;
+    text-align: center;
+  }
   h3 {
-    font-size: 1rem;
+    font-size: 5px;
   }
   p {
-    font-size: 1rem;
+    font-size: 5px;
   }
   .card-text {
     font-size: 1rem;
@@ -257,6 +271,20 @@ p {
   font-family: "Cedarville Cursive", cursive;
   font-style: italic;
   color: #f2fedc;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #333;
+}
+
+/* text effect of the videos */
+.captation {
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 5%;
+}
+.captation p {
+  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  color: #c8ae53;
   font-size: 2rem;
   text-shadow: 0 0 5px #333;
 }

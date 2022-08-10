@@ -22,6 +22,17 @@
     h2{
         font-size: $Text_Small;
     }
+    /* text effect of the videos */
+.captation{
+    position: absolute;
+    margin-top: 30%; 
+    margin-left: 5%;
+    p{
+        @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_SuperSmall);
+        text-shadow: 0 0 $Shadow $Color_Body;
+        text-align: center;
+    }
+}
     h3{
     font-size: $Text_SuperSmall;
     }
