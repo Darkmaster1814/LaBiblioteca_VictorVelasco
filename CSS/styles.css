@@ -294,6 +294,11 @@ p {
   background-image: linear-gradient(to bottom, rgba(151, 92, 44, 0.813) 30%, rgb(233, 172, 87), rgba(211, 151, 67, 0.7));
 }
 
+.navbar-nav {
+  margin-right: 5%;
+}
+
+/* Color of text navbar */
 /* Text logo styles */
 /* Logo */
 .logo h1, .logo h2 {
