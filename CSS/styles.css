@@ -1,8 +1,11 @@
-/* Import styles from other subwebpages */ /* VARIABLES */
+/* Import styles from other subwebpages */ /* Font vinculation */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
+/* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -11,11 +14,14 @@
 /* Gaps */
 /* Mixin of type of text */
 /* Mixin of background image */
+/* Font vinculation */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -25,6 +31,10 @@
 /* Mixin of type of text */
 /* Mixin of background image */
 /* Universal reset */
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,11 +70,13 @@ html {
   background-color: #c8ae53;
 }
 
+/* Font vinculation */
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -87,6 +99,10 @@ html {
   .card-text {
     font-size: 1.5rem;
   }
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /* MEDIA QWERY FOR SMARTPHONES */
 @media only screen and (min-width: 0px) and (max-width: 489px) {
@@ -107,7 +123,7 @@ html {
     font-style: oblique;
     color: #c8ae53;
     font-size: 5px;
-    text-shadow: 0 0 5px #333;
+    text-shadow: 0 0 5px #f2fedc;
     text-align: center;
   }
   h3 {
@@ -119,12 +135,18 @@ html {
   .card-text {
     font-size: 1rem;
   }
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+/* Font vinculation */
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -138,7 +160,7 @@ html {
 .submenu {
   background-image: url(../Imagenes/Menu1.jpg);
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
 }
@@ -146,7 +168,12 @@ html {
 .submenu a {
   text-decoration: none;
   color: #f2fedc;
-  text-shadow: 0 0 5px #333;
+  text-shadow: 0 0 5px #f2fedc;
+}
+
+/* card widht of menu web page */
+.card.menu {
+  width: 16rem;
 }
 
 /* Sub row of conocenos subwebpage */
@@ -155,11 +182,22 @@ html {
   padding: 2%;
 }
 
+.badge {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 12px 15px;
+  border-radius: 0 0 0 26px;
+  font-size: 14px;
+}
+
+/* Font vinculation */
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -173,11 +211,13 @@ html {
   padding: 5%;
 }
 
+/* Font vinculation */
 /* VARIABLES */
 /* Text sizes */
 /* Text type */
 /* Text cursive */
 /* Text normal */
+/* Text for subtitles info */
 /* Colors */
 /* Map of colors for social icons */
 /* Shadow */
@@ -190,7 +230,7 @@ html {
 .errorBackground {
   background-image: url(../Imagenes/error404.svg);
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -203,7 +243,7 @@ html {
 
 /* body background color */
 body {
-  background-color: #333;
+  background-color: #f2fedc;
 }
 
 /* TEXT colors */
@@ -275,11 +315,25 @@ p {
   text-shadow: 0 0 5px #333;
 }
 
+h5 {
+  font-family: "PT Serif", serif;
+  color: black;
+  font-size: 5.5rem;
+}
+
+h6 {
+  font-family: "PT Serif", serif;
+  color: #00755d;
+  font-size: 2rem;
+}
+
 /* text effect of the videos */
 .captation {
+  display: inline-block;
+  justify-content: center;
   position: absolute;
-  margin-top: 30%;
   margin-left: 5%;
+  margin-top: 5%;
 }
 .captation p {
   font-family: "Cedarville Cursive", cursive;
@@ -298,7 +352,6 @@ p {
   margin-right: 5%;
 }
 
-/* Color of text navbar */
 /* Text logo styles */
 /* Logo */
 .logo h1, .logo h2 {
@@ -319,31 +372,33 @@ p {
 }
 
 /* Carrusell style */
+.carrusel-height {
+  height: 500px;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
 .carousel-control-prev, .carousel-control-next {
   background-color: transparent;
   border: 0;
 }
 
-/* Container styles color */
-.row {
-  background-color: #f2fedc;
-  gap: 2%;
-}
-
 /* jombotron style */
 .jumbotron {
-  margin-top: 2rem;
+  margin-top: 5%;
 }
 .jumbotron a {
   text-decoration: none;
-  color: #333;
+  color: #f2fedc;
 }
 
 /* Menu styles */
 .menu {
   background-image: url(../Imagenes/Menu.jpg);
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
 }
@@ -351,7 +406,7 @@ p {
 .ubicacion {
   background-image: url(../Imagenes/map-gcf0629988_1920.jpg);
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
 }
@@ -365,16 +420,24 @@ p {
 }
 .jumbotron_us a {
   text-decoration: none;
-  color: #333;
+  color: #f2fedc;
 }
 
 /* Us style  text colors */
 .card {
   margin-top: 5%;
+  border: 0px;
+  height: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .card-title {
   color: #1b1b1b !important;
+  font-weight: bold;
 }
 
 .card-text {
@@ -399,6 +462,7 @@ footer i, h2 i {
   font-size: 1.5rem;
   letter-spacing: 20px;
   transition: all 0.8s;
+  margin-bottom: 4%;
 }
 footer i:hover, h2 i:hover {
   cursor: pointer;

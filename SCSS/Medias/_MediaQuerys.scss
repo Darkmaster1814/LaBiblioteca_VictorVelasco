@@ -13,6 +13,10 @@
     .card-text{
         font-size: $Text_Medium;
     }
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 /* MEDIA QWERY FOR SMARTPHONES */
 @media only screen and (min-width: 0px) and (max-width: 489px) {
@@ -41,5 +45,9 @@
     }
     .card-text{
         font-size: $Text_Small;
+    }
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
     }
 }

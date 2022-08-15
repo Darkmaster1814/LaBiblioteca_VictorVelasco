@@ -1,5 +1,8 @@
+/* Font vinculation */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ibarra+Real+Nova:ital,wght@1,500&family=PT+Serif&display=swap');
 /* VARIABLES */
 /* Text sizes */
+$Text_HyperBig:6rem;
 $Text_SuperBig:3rem;
 $Text_Big:2rem;
 $Text_Medium:1.5rem;
@@ -10,6 +13,8 @@ $Text_SuperSmall:5px;
 $Text_Cursive:"Cedarville Cursive", cursive;
 /* Text normal */
 $Text_Kardomo:"Kdam Thmor Pro", sans-serif;
+/* Text for subtitles info */
+$Text_Subtitles:'PT Serif', serif;
 /* Colors */
 $Color_Header:linear-gradient(to bottom,
 rgba(151, 92, 44, 0.813) 30%,
@@ -17,7 +22,7 @@ rgb(233, 172, 87),
 rgba(211, 151, 67, 0.7));
 $Color_Jumbotron: linear-gradient(to bottom, #00755d, #008263, #009068, #009d6b, #00ab6e, #00b072, #00b477, #00b97b, #00b682, #09b388, #17b08d, #24ad91);
 $Color_Background:#f2fedc;
-$Color_Body:#333;
+$Color_Body:#f2fedc;
 $Color_Banner:#00755d;
 $Color_Text:#1b1b1b;
 $Color_Subtitles:#c8ae53;
@@ -29,13 +34,14 @@ $fa:(
 );
 /* Shadow */
 $Shadow:5px;
+$shadowcolor:#333;
 /* Transition */
 $Time:0.8s;
 $Scale:1.05;
 $Translate:-15px;
 /* PAGE SIZES */
 $width:100%;
-$height:500px;
+$height:550px;
 $b-sizes:cover;
 $c-position:center;
 /* Gaps */

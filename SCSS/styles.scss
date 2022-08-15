@@ -8,14 +8,14 @@
 @import"./SubWebPagesStyles/error";
 /* body background color */
 body {
-    background-color: $Color_Body;
+    background-color: $Color_Background;
 }
 /* TEXT colors */
 /* font awesome styles */
 a {
     color: $Color_Background;
     text-decoration: none;
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
     & p {
         /* text-align: right; */
         font-size: $Text_Big;
@@ -30,7 +30,7 @@ a {
 h1 {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Background,$Text_SuperBig);
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
 }
 h2 {
     @extend h1;
@@ -40,12 +40,12 @@ h2 {
 h3 {
      /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_SuperBig);
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
 }
 h4 {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,oblique,$Color_Subtitles,$Text_Big);
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
     & i {
         @extend i;
         transition: all $Time;
@@ -64,16 +64,28 @@ h4 {
 p {
     /* text cursive type,fontstyle,color,size */
     @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
+}
+h5{
+    font-family: $Text_Subtitles;
+    color: black;
+    font-size: 5.5rem;
+}
+h6{
+    font-family: $Text_Subtitles;
+    color: $Color_Banner;
+    font-size: 2rem;
 }
 /* text effect of the videos */
 .captation{
+    display: inline-block;
+    justify-content: center;
     position: absolute;
-    margin-top: 30%; 
     margin-left: 5%;
+    margin-top: 5%;
     p{
         @include Text($Text_Cursive,italic,$Color_Subtitles,$Text_Big);
-        text-shadow: 0 0 $Shadow $Color_Body;
+        text-shadow: 0 0 $Shadow $shadowcolor;
     }
 }
 /* Navigation bar color and style*/
@@ -83,22 +95,26 @@ p {
 .navbar-nav{
     margin-right: 5%;
 }
-/* Color of text navbar */
 /* Text logo styles */
 /* Logo */
 .logo {
     & h1 {
     /* text cursive type,fontstyle,color,size */
     @include Text($Text_Cursive,italic,$Color_Background,$Text_Big);
-    text-shadow: 0 0 $Shadow $Color_Body;
+    text-shadow: 0 0 $Shadow $shadowcolor;
     }
     & span {
     /* text normal type,fontstyle,color,size */
     @include Text($Text_Kardomo,normal,$Color_Text,$Text_Big);
-        text-shadow: 1px 1px $Color_Body;
+        text-shadow: 1px 1px $shadowcolor;
     }
 }
 /* Carrusell style */
+.carrusel-height{
+    height: 500px;
+}
+.carousel-inner {
+    padding: 1em;}
 .carousel-control-prev {
     background-color: transparent;
     border: 0;
@@ -106,15 +122,10 @@ p {
 .carousel-control-next {
     @extend.carousel-control-prev;
 }
-/* Container styles color */
-.row {
-    background-color: $Color_Background;
-    gap: $gap_box;
-}
 /* jombotron style */
 .jumbotron {
     @extend .navbar;
-    margin-top: $Text_Big;
+    margin-top: 5%;
     & a {
         text-decoration: none;
         color: $Color_Body;
@@ -151,9 +162,16 @@ p {
 /* Us style  text colors */
 .card{
     margin-top: $separacioncard;
+    border:0px;
+    height: 100%;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
 }
 .card-title {
     color: $Color_Text !important;
+    font-weight: bold;
 }
 .card-text {
     font-family: $Text_Cursive;
@@ -175,6 +193,7 @@ footer {
         font-size: $Text_Medium;
         letter-spacing: 20px;
         transition: all $Time;
+        margin-bottom: 4%;
     }
     & i:hover {
         cursor: pointer;
@@ -199,7 +218,7 @@ footer {
     text-align: center;
     border: 5px solid rgba(211, 151, 67, 0.707);
     border-radius: 50%;
-    box-shadow: 0 0 $Shadow $Color_Body;
+    box-shadow: 0 0 $Shadow $shadowcolor;
     position: fixed;
     height: 40px;
     width: 40px;
