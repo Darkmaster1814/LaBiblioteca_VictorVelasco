@@ -7,6 +7,12 @@
     h3{
     font-size: $Text_Big;
     }
+    h5{
+        font-size: $Text_Big;
+    }
+    h6{
+        font-size: $Text_Big;
+    }
     p{
     font-size: $Text_Medium;
     }
@@ -26,6 +32,12 @@
     h2{
         font-size: $Text_Small;
     }
+    h5{
+        font-size: $Text_Small;
+    }
+    h6{
+        font-size: $Text_Small;
+    }
     /* text effect of the videos */
 .captation{
     position: absolute;
@@ -39,6 +51,12 @@
 }
     h3{
     font-size: $Text_SuperSmall;
+    }
+    h5{
+        font-size: $Text_SuperSmall;
+    }
+    h6{
+        font-size: $Text_SuperSmall;
     }
     p{
     font-size: $Text_SuperSmall;

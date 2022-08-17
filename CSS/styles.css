@@ -93,6 +93,12 @@ html {
   h3 {
     font-size: 2rem;
   }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 2rem;
+  }
   p {
     font-size: 1.5rem;
   }
@@ -112,6 +118,12 @@ html {
   h2 {
     font-size: 1rem;
   }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
   /* text effect of the videos */
   .captation {
     position: absolute;
@@ -127,6 +139,12 @@ html {
     text-align: center;
   }
   h3 {
+    font-size: 5px;
+  }
+  h5 {
+    font-size: 5px;
+  }
+  h6 {
     font-size: 5px;
   }
   p {
